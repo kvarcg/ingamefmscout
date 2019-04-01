@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="FMScout.UserControls.LabeledTextBoxProfile"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:customcontrols="clr-namespace:FMScout.CustomControls"
+    Height="{Binding TextBoxHeight}" Width="Auto" Style="{DynamicResource LabeledTextBoxProfile}">
+    <Grid x:Name="LayoutRoot">
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="{Binding LabelWidth}"/>
+		<ColumnDefinition Width="{Binding TextBoxWidth}"/>
+	</Grid.ColumnDefinitions>
+        <Label x:Name="MyLabel" Grid.Column="0"
+			Content="{Binding LabelContent}" 	
+			Width="Auto"						
+			Height="{Binding LabelHeight}"
+            HorizontalContentAlignment="Left"
+            VerticalAlignment="Center"
+            Background="Transparent"
+			Style="{DynamicResource ProfileLabel}"/>
+        <TextBox x:Name="MyTextBox" Grid.Column="1"
+            Text="{Binding TextBoxText}"
+		    Width="Auto"								
+		    Height="{Binding TextBoxHeight}"		
+            HorizontalContentAlignment="{Binding TextBoxAlignment}"
+            VerticalAlignment="Center"
+            VerticalContentAlignment="Center" 
+			Background="Transparent"
+			BorderBrush="Transparent"
+			Foreground="{Binding TextBoxForeground}"
+			Style="{DynamicResource ProfileTextBox}"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,726 @@
+﻿#currencies
+Ingiliz Sterlini
+Euro
+Amerikan Dolari
+
+#wages
+Haftalik
+Aylik
+Yillik
+
+#heights
+Santimetre
+Metre
+
+#weights
+Kilogram
+Pound
+
+#yesno
+Evet
+Hayir
+
+#contractstatuses
+Bitiyor (6 ay)
+Bitiyor (1 yil)
+Serbest Transfer
+
+#regions
+Afrika
+Asya
+Avrupa
+Kuzey Amerika
+Guney Amerika
+Okyanusya
+
+#WindowGeneralLabels
+Genel Ayarlar
+Para Birimi
+Maas Suresi
+Boy/Uzunluk
+Agirlik
+Duzenleme Modu
+Dil
+Tema
+Harika Yet. Mak Yas
+Harika Yet. Min Yas
+Harika Pers. Min Pot.Yet.
+Harika Takim Min Un   
+cm
+m
+kg
+lbs
+
+#WindowPreferencesLabels
+Secenekler
+Ayarlar
+Genel
+Oyuncu Kategorileri
+Personel Kategorileri
+Takim Kategorileri
+Kisaliste Kategorileri
+Oyuncu Kategori Ayarlari
+Personel Kategori Ayarlari
+Takım Kategori Ayarları
+Kisaliste Kategori Ayarlari
+Hepsini Sec
+Temizle
+Varsayilan
+Ayarlari Kullan
+Iptal Et
+Ayarlarda degisiklik yaptin,
+eski ayarlara donmek icin buraya tiklabilirsin.
+Simdiki ayarlari kaydet
+Secili ayari sil
+Ayarlari varsayilan yap
+Degisiklikleri kaydetmeden ayarlari kullan
+Sadece pencereyi kapat
+
+#WindowAboutLabels
+FM Assistant10
+Tamam
+Bu program FM 2010 oyununun yalnızca 10.3 versiyonu için  gerçek zamanlı gözlemci aracı olarak tasarlanmıştır.
+SIGames forumlarında ki FM 2010 Ingame/Scout Framework çalışmasını paylaşan DrBernhard'a özel teşekkürlerimi sunarım.
+Simge ve logolarda yardımını esirgemeyen Stam'a teşekkürlerimi sunarım.
+Ayrıca beta sürümü denemelerine katılan tüm arkadaşlarıma da teşekkürlerimi sunarım.
+Çeviriler
+İtalyancaya: Giovanni
+Türkçeye: Ufuk Gültin
+Iletisim Detaylari
+FMAssistant10 ana sayfasi
+Email gonder
+Hata Bildir
+
+#WindowLoadingLabels
+FM 2010 10.3 araniyor... Lutfen Bekleyin...
+Calisan bir FM 2010 bulundu
+Veriler yukleniyor...
+FM verileri yukleniyor...
+Gozlemci verileri hazirlaniyor...
+FM 2010 yuklendi
+...
+saniyede
+FM 2010 10.3 yuklemede hata!
+Kayitli oyun acik degil veya FM 2010'un versiyonu 10.3 degil...
+Kapaniyor...
+
+#WindowDonateLabels
+FM Assistant10 Bagis
+Haydi Bastir :)
+Simdilik Degil :(
+Bu arac daima ucretsizdir ve kullanima aciktir.Oyununuzu zevkli hale getirmek icin hazirlanmistir.
+Ama isterseniz bir tesekkur maiyetinde ve programi daha gelistirmeye tesvik icin bagista bulunabilirsiniz.
+Kostas ile FM Gucu :)
+
+#WindowInfoLabels
+Simdiki Ayarlar
+Oyun Ayarlari
+Oyun Durumu
+yuklendi
+Oyun Versiyonu
+Oyuncular
+Personeller
+Takimlar
+Gozlemci Ayarlari
+Ayarlar
+Dil
+Tema
+Para Birimi
+Maas
+Boy
+Kilo
+Editor Ayarlari
+Duzenleme Ayarlari
+
+#WindowCustomizeColumnsLabels
+Kategorileri Ayarla
+
+#MenuLabels
+Yukle
+Cikis
+Kisaliste
+Kisalisteni Al
+Kisalisteni Aktar
+Secili Kisalisteni Aktar
+Kisalisteye Ekle
+Arama
+Oyuncular
+Personeller
+Takimlar
+Kisaliste
+Simdi Ara
+Temizle
+Oyuncu filtrelerini temizle
+Personel filtrelerini temizle
+Takim filtrelerini temizle
+Kisalisteyi temizle
+Hepsini Temizle
+Araclar
+Secenekler
+Yardim
+Hakkinda
+Bagis
+
+#WindowMainLabels
+Oyuncu
+Personel
+Takim
+Kisaliste
+Genel
+Ozellikler
+Oyun Tarihi
+Oyun Ekranindaki Profili Goster
+Gozlemci Detaylarini Goster
+Gozlemci Detaylarini Gizle
+
+#GeneralSearchLabels
+Arama Filtreleri
+Sonuclar
+kategorileri duzenle
+
+#PlayerSearchLabels
+Ad
+adi girin...
+Uyruk
+uyrugu girin...
+Kulup
+kulubu girin...
+Bolge
+Yas
+SimYet
+PotYet
+MO%
+En iyi MO
+Maas
+Deger
+Satis Degeri
+Sozlesme Durumu
+Co-Ownership
+AB
+Regen
+Kull.Ayak
+Pozisyonlar
+Kanatlar
+GK
+SW
+D
+WB
+DM
+M
+AM
+ST
+Sol
+Sag
+Ort
+Ser
+F
+
+#StaffSearchLabels
+Ad
+adi girin...
+Uyruk
+uyrugu girin...
+Kulup
+kulubu girin...
+Is
+Bolge
+Yas
+Sim.Yet
+Pot.Yet
+Sozlesme Durumu
+En iyi MO
+Regen
+
+#TeamSearchLabels
+Ad
+adi girin...
+Ulke
+ulkeyi girin...
+Stadyum
+stadi girin...
+Takim Turu
+Un
+Bolge
+Transfer Butcesi
+Maas Butcesi
+
+#PlayerProfileLabels
+Teknigi Goster
+Kaleciligini Goster
+Mevkisel Oran:
+En iyi MO:
+Takim kadrosu
+Sozlesme baslangici
+Sozlesme sonu
+Maas
+Mac basi prim
+Gol primi
+Gol yememe primi
+Kondisyon
+Saglik
+Moral
+Yorgunluk
+Mutluluk
+Forma Numarasi
+Sol Ayak
+Sag Ayak
+
+#StaffProfileLabels 
+Sozlesme baslangici
+Sozlesme sonu
+Maas
+
+#SearchingResults
+Ara
+araniyor
+Durdur
+oyuncu bulundu.
+harika yetenek bulundu.
+personel bulundu.
+harika personel bulundu.
+takim bulundu.
+harika takim bulundu.
+kisaliste bulundu.
+Sonuclar
+saniyede bulundu.
+MO hesaplaniyor
+SO hesaplaniyor
+oyuncu
+personel
+takim
+Harika Yetenek
+Harika Personel
+Harika Takim
+Serbest Oyuncu
+Serbest Personel
+
+#ProfileGenericLabels
+Yok
+Kullanilamaz
+Bilinmiyor
+Hayir
+Evet
+Kisalisteye ekle
+Kisalisteden cikar
+Tum Kadrolar
+Takim
+Milli olmamis
+yasinda
+Burda Yetismemis
+Yetistigi Kulup:
+AB Kimligi:
+Satilmiyor
+Iki ayak
+Sol ayak
+Sag ayak
+Issiz
+Sozlesme Bitti
+Maas yok
+Prim yok
+forma
+gol
+Regen Degil
+Regen
+Ulke oyunculari
+Oyunculari listele
+Personelleri listele
+Takimi iyilestir
+Butce yok
+Sahipsiz
+Konum bilinmiyor
+Yakin stadyum yok
+Bos
+Atak
+Oyun Kurucu
+Serbest Rol
+Kulupten Yetismis
+Ulkede Yetismis
+
+#TeamProfileLabels
+Kurulus
+Ulke
+Statu
+Maks Pilot Kulup
+Simdiki Pilot Kulup
+Antrenman Tesisleri
+Genc Tesisleri
+Genc Akademisi
+Maks. Seyirci Sayisi
+Ort. Seyirci Sayisi
+Min. Seyirci Sayisi
+Un
+Sezonluk Transfer Butcesi
+Kalan Transfer Butcesi
+Denge
+Maas Butcesi
+Kullanilan Maas Butcesi
+Kullanilabilir Transfer Geliri
+Eskime
+Genislik
+Uzunluk
+Kapasite
+Koltuklu
+Genisleme Kapasitesi
+Kullanilan Kapasite
+
+#WindowProfileLabels
+Oyuncu Profil Gorunumu
+Personel Profil Gorunumu
+Takim Genel Gorunumu
+Oyuncu Listesi
+Personel Listesi
+Takim Listesi
+
+#playerSearchAttributesGroupBoxes
+Teknik
+Fiziksel
+Zihinsel
+Gizli Ozellikler
+Kaleci
+Gizli Zihinsel Ozellikler
+Genel
+Sozlesme
+Diger
+
+#prefFoots
+Ikisi
+Sag
+Sol
+
+#bestprs
+GK
+DC
+DL
+DR
+DMC
+DML
+DMR
+AMC
+AML
+AMR
+Hizli FC
+Hedef FC
+
+#ownerShips
+Kira
+Co-Owner
+
+#staffSearchAttributesGroupBoxes
+Taktik
+Zihinsel
+Antrenor
+Diger
+Baskan
+Genel
+Sozlesme
+Antrenman Yildizlari
+
+#staffDisplayRatings
+Form 
+GK 
+Tak 
+TopK 
+Def 
+Atak 
+Sut 
+DurTop 
+
+#staffRoles
+Baskan
+Yonetici
+Menajer
+Yardimci Antrenor
+As Takim Antrenoru
+Genc Takim Antrenoru
+Antrenor
+As/Genc/Antrenor
+Form-Saglik Antrenoru
+Kaleci Antrenoru
+Doktor
+Gozlemci
+
+#bestcrs
+Form-Saglik 
+Kaleci 
+Taktik 
+Top Kontrol
+Dafans 
+Atak 
+Sutlar 
+Duran Toplar 
+
+#teamGroupBoxes
+Genel
+Finans
+Stadyum
+
+#teamtypes
+Milli
+Kulup
+
+#reputations
+Dunyaca
+Ulusal
+Yerel
+Taninmamis
+
+#playerColumns
+KLs
+ID
+Ad
+Uyruk
+Kulup
+Takim Kadrosu
+Pozisyonlar
+Yas
+Sim.Yet
+Pot.Yet
+Fark
+En iyi MO
+En iyi MO%
+Deger
+Satis Degeri
+Soz.Bas.
+Soz.Bit.
+Maas
+Dunya Unu
+Ulusal Un
+Yerel Un
+Korner Kullanma
+Orta Yapma
+Top Surme
+Bitiricilik
+Ilk Dokunus
+Frikik Kullanma
+Kafa Vurma
+Uzun Sut
+Tac Kullanma
+Markaj
+Pas
+Penalti Kullanma
+Top Kapma
+Teknik
+Hizlanma
+Ceviklik
+Denge
+Ziplama
+Saglik
+Hiz
+Dayaniklilik
+Guc
+Sol Ayak
+Sag Ayak
+Saldirganlik
+Onceden Sezme
+Cesaret
+Sogukkanlilik
+Konsantrasyon
+YAraticilik
+Karar Verme
+Azim
+Ozel Yetenek
+Soz Gecirme
+Topsuz Alan
+Pozisyon Alma
+Takim Calismasi
+Calisma Orani
+Devamlilik
+Cirkeflik
+Onemli Maclar
+Sakatlanma Egilimi
+Cok Yonluluk
+Hava Ustunlugu
+Bolge Hakimiyeti
+Iletisim
+Farklilik
+Elle Kontrol
+Ayak Gucu
+Bire Bir
+Refleksler
+Ani Cikis
+Yumruk Egilimi
+Top Atma
+Adaptasyon
+Hirs
+Anlasmazlik
+Sadakat
+Baskilara Dayanma
+Profesyonellik
+Centilmenlik
+Karakter
+
+#staffColumns
+ID
+Ad
+Uyruk
+Kulup
+Is
+Yas
+Sim.Yet
+Pot.Yet
+Fark
+En iyi ant.
+En iyi ant.yldz
+Soz.Bas.
+Soz.Bit.
+Maas
+Dunya Unu
+Ulusal Un
+Yerel Un
+Derinlik
+Direk
+Gosteris
+Esneklik
+Serbest Rol
+Markaj
+Ofsayt
+Pres
+Geriye Yaslanma
+Tempo
+Oyun Kurucu Kullanimi
+Yedek Kullanimi
+Genislik
+Adaptasyon
+Hirs
+Anlasmazlik
+Kararlilik
+Sadakat
+Baskilara Dayanma
+Profesyonellik
+Centilmenlik
+Oyuncu Alimi
+Antrenman Zorlugu
+Disiplin
+Motivasyon
+Fizyoterapi
+Taktik Bilgi
+Ofansif
+Defansif
+Saglik
+Kaleci
+Zihinsel
+Oyuncu
+Taktiksel
+Tekniksel
+Adam Yonetimi
+Genclerle Calisma
+Oyuncu Alimi
+Antrenman Zorlugu
+Akil Oyunlari
+Kadro Rotasyonu
+Is
+Mudahale
+Sabir
+Kaynaklar
+
+#teamColumns
+ID
+Ad
+Ulke
+Un
+Statu
+Stadyum
+Transfer Butcesi
+Kalan Butce
+Maas Butcesi
+Kullanilan Maas Butce
+Denge
+Kullanilabilir Transfer Geliri
+Simdiki Pilot Kulup
+Maks Pilot Kulup
+Antrenman Tesisleri
+Genc Tesisleri
+Maks. Seyirci
+Ort. Seyirci
+Min. Seyirci
+Eskime
+Genislik
+Uzunluk
+Kapasite
+Koltuklu
+Genisleme Kapasitesi
+Kullanilan Kapasite
+
+#shortlistColumns
+ID
+Ad
+Uyruk
+Kulup
+Takim Kadrosu
+Pozisyonlar
+Yas
+Sim.Yet
+Pot.Yet
+Fark
+En iyi MO
+En iyi MO%
+Deger
+Satis Degeri
+Soz.Bas.
+Soz.Bit.
+Maas
+Dunya Unu
+Ulusal Un
+Yerel Un
+Korner Kullanma
+Orta Yapma
+Top Surme
+Bitiricilik
+Ilk Dokunus
+Frikik Kullanma
+Kafa Vurma
+Uzun Sut
+Tac Kullanma
+Markaj
+Pas
+Penalti Kullanma
+Top Kapma
+Teknik
+Hizlanma
+Ceviklik
+Denge
+Ziplama
+Saglik
+Hiz
+Dayaniklilik
+Guc
+Sol Ayak
+Sag Ayak
+Saldirganlik
+Onceden Sezme
+Cesaret
+Sogukkanlilik
+Konsantrasyon
+Yaraticilik
+Karar Verme
+Azim
+Ozel Yetenek
+Soz Gecirme
+Topsuz Alan
+Pozisyon Alma
+Takim Calismasi
+Calisma Orani
+Devamlilik
+Cirkeflik
+Onemli Maclar
+Sakatlanma Egilimi
+Cok Yonluluk
+Hava Ustunlugu
+Bolge Hakimiyeti
+Iletisim
+Farklilik
+Elle Kontrol
+Ayak Gucu
+Bire Bir
+Refleksler
+Ani Cikis
+Yumruk Egilimi
+Top Atma
+Adaptasyon
+Hirs
+Anlasmazlik
+Sadakat
+Baskilara Dayanma
+Profesyonellik
+Centilmenlik
+Karakter

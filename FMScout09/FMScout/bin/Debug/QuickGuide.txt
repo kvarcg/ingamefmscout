@@ -1,0 +1,111 @@
+QuickGuide Ingame FMScout09
+
+1) Shortcut keys
+a) Generic shortcuts
+Ctrl + L Loads the game
+Ctrl + F12 Exits the game
+Ctrl + P Preferences Menu
+Ctrl + H About Menu
+Ctrl + D Donation Menu
+
+b) Shortlist shortcuts
+Ctrl + I Import Shortlist (from slf or csv)
+Ctrl + S Export Shortlist (to slf, csv or txt) - CSV exports also the id, which is needed to identify players on import
+Ctrl + E Export Selected Shortlist (exports as above but only the selected rows in the shortlist view)
+Ctrl + A Adds the selected rows from the player view to the shortlist view
+
+c) Quick access shortcuts
+Ctrl + F1 Quick change to players view
+Ctrl + F2 Quick change to staff view
+Ctrl + F3 Quick change to teams view
+Ctrl + F4 Quick change to multisearch view
+Ctrl + F5 Quick change to shortlist view
+
+d) Quick access shortcuts for views
+Enter initiates search on the view you currently are (no need to go back and press search)
+Ctrl + G or double click on row: Loads the profile for the entity (player, staff, team) you have selected in the grid (or the first one if you have 
+multiple selections)
+
+e) Clear Shortcuts
+Ctrl + Q Clears all fields on the multisearch view
+Ctrl + W Clears all fields on the players view
+Ctrl + E Clears all fields on the staff view
+Ctrl + R Clears all fields on the teams view
+Ctrl + C Clears all fields on all views
+
+2) Toolbar buttons
+There are five categories separated by a vertical line.
+Category 1:
+Generic buttons
+a) Loads the game (same as Ctrl + L in 1a)
+b) Preferences menu (same as Ctrl + P in 1a)
+c) clear all fields (same as Ctrl + C in 1e)
+
+Category 2:
+Contact and homepage buttons
+a) Bug Report: opens default email editor for bug report
+b) Email: opens default email editor for email
+c) Homepage: opens official homepage
+
+Category 3:
+Shortlist buttons
+a) Import Shortlist (from slf or csv) (same as Ctrl + I in 1b)
+b) Export Shortlist (to slf, csv or txt) - CSV exports also the id, which is needed to identify players on import (same as Ctrl + S in 1b)
+c) Export Selected Shortlist (exports as above but only the selected rows in the shortlist view) (same as Ctrl + E in 1b)
+d) Adds the selected rows from the player view to the shortlist view (same as Ctrl + A in 1b)
+e) Quick change to shortlist view (same as Ctrl + F5 in 1c)
+
+Category 4:
+Quick access buttons for views
+a) Quick view search (same as Enter in 1d)
+b) Quick profile view (same as Ctrl + G in 1d)
+c) Clear view (same as clear shortcuts but works for the view you currently are)
+d) Clear table (clears the table from your last search)
+
+Category 5:
+Editing menu: go to preferences menu and selected editing yes and save changes. Then select an entity and go to profile view by Ctrl + G, 
+double click or by the profile button and the editing menu should be enabled.
+You should see all editable fields in a different color. Currency information has been disabled because you are editing values here.
+Disable editing from the preferences menu if you want to go back to currency display for fields like value, sale value, wage, etc.
+a) Save all your current changes
+b) Clear all your current changes if you are unhappy with it
+The reason there is a save button instead of automatic saving a change in a field is to protect any typing errors. Make
+all the changes you need, then press save :).
+
+3) Tree toolbar buttons
+a) Move up a node in the tree
+b) Move down a node in the tree
+
+Category 6:
+MiniScout:
+MiniScout contains the following buttons:
+a) Load FM2009 (loads the game)
+b) Refresh (checks the game on whether the current screen contains a player, a staff or a team)
+c) Clear (resets the fields)
+d) On Top (sets the MiniScout in on Top Mode, so you can run FM in fullscreen and get hidden information without having to go to the scout and search)
+e) Active Player (shows information on Active Player)
+f) Active Staff (shows information on Active Staff)
+g) Active Team (shows information on Active Team). To get the current team, you need to go to a team in FM and click on the Information screen.
+
+4) Hints and tips:
+a) Loads FM, load the scout, type Ctrl + L to quickly load the game. You can also reload the game as many times as you want.
+b) Ctrl + P to go to preferences and select the currency, wage, height and weight preferences you want
+c) Go to any of the column tabs and select the visible columns you want.
+d) Go to Visual settings and select a default theme or create a custom one. If you are happy with it you can save it.
+It will be stored under the themes folder as a .the file. When you click on a color, you move immediately to custome
+theme mode and all colors you choose are set immediately.
+e) If you are happy with your selections choose save as default and every time you load the scout these options will be
+selected as default. Also default buttons in the column tabs reflect your selection now. If at any point you want to revert
+to the application original settings, choose restore original settings.
+f) The toolbar buttons and the selections in the file menubar are automatically enabled or disabled depending on your current view.
+For example, the add to shortlist button is only enabled when you are in search view for players and you have performed a query with
+at least one result or the import/export shortlist buttons are enabled only in shortlist view.
+g) When you perform a search, you can click on the blue down arrow button for quickly changing the columns. To hide the column panel
+and set the changes, just right click on it!
+h) When you view your results in a search you can press the profile button on a row, double click, press the profile button or go
+to file menu-search-profile view to view the profile page for your selection.
+h) Play with your theme customization and if you think you found something excellent, mail the .the file to me and i might include it
+as default in the next version!
+i) There is a vertical splitter next to the tree view which you can click to hide the tree.
+k) There is a horizontal splitter on each view (except the shortlist) which you can click to hide the filters and enlarge the table.
+l) To enable editing, go to preferences manu, select editing and save changes.

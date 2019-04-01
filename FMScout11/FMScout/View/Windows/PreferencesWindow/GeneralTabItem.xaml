@@ -1,0 +1,59 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:uc="clr-namespace:FMScout.UserControls"
+    mc:Ignorable="d"
+	x:Class="FMScout.View.PreferencesWindow.GeneralTabItem"
+	x:Name="UserControl"
+	d:DesignWidth="640" d:DesignHeight="480">
+
+    <Grid x:Name="LayoutRoot">
+        <GroupBox Style="{DynamicResource GroupBoxSearch}" x:Name="GroupBoxGeneralSettings" 
+                  Header="{Binding Path=generalsettings.Header}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid x:Name="LeftGrid" HorizontalAlignment="Left" Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <uc:LabeledComboBox x:Name="currency" DataContext="{Binding Path=currency}" Grid.Row="0" Grid.Column="0"/>
+                    <uc:LabeledComboBox x:Name="wage" DataContext="{Binding Path=wage}" Grid.Row="1" Grid.Column="0"/>
+                    <uc:LabeledComboBox x:Name="height" DataContext="{Binding Path=height}" Grid.Row="2" Grid.Column="0"/>
+                    <uc:LabeledComboBox x:Name="weight" DataContext="{Binding Path=weight}" Grid.Row="3" Grid.Column="0"/>
+                    <uc:LabeledComboBox x:Name="allowEditing" DataContext="{Binding Path=allowEditing}" Grid.Row="4" Grid.Column="0"/>
+                    <uc:LabeledComboBox x:Name="language" DataContext="{Binding Path=language}" Grid.Row="5" Grid.Column="0"/>
+					<uc:LabeledComboBox x:Name="theme" DataContext="{Binding Path=theme}" Grid.Row="6" Grid.Column="0"/>
+                </Grid>
+                <Grid x:Name="RightGrid" HorizontalAlignment="Right" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <uc:LabeledNumericUpDown x:Name="wonderkidsMaxAge" DataContext="{Binding Path=wonderkidsMaxAge}" Grid.Row="0"/>
+                    <uc:LabeledNumericUpDown x:Name="wonderkidsMinPA" DataContext="{Binding Path=wonderkidsMinPA}" Grid.Row="1"/>
+                    <uc:LabeledNumericUpDown x:Name="wonderstaffMinPA" DataContext="{Binding Path=wonderstaffMinPA}" Grid.Row="2"/>
+                    <uc:LabeledNumericUpDown x:Name="wonderteamsMinRep" DataContext="{Binding Path=wonderteamsMinRep}" Grid.Row="3"/>
+                </Grid>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

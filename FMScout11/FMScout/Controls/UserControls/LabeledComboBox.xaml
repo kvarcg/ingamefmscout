@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="FMScout.UserControls.LabeledComboBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:FMScout.UserControls"                 
+    Height="Auto" Width="Auto">
+    <StackPanel x:Name="LayoutRoot" Orientation="{Binding StackPanelOrientation}">
+        <Label x:Name="MyLabel"               
+			Content="{Binding LabelContent}" 
+			Width="{Binding LabelWidth}" 								
+			Height="{Binding LabelHeight}"
+            HorizontalContentAlignment="{Binding LabelAlignment}"
+            VerticalAlignment="Center" 
+            Style="{DynamicResource Label}"/>
+        <ComboBox x:Name="MyComboBox"
+        	ItemsSource="{Binding ComboBoxItems}" 
+        	ItemTemplate="{Binding ComboBoxItemTemplate}"
+            SelectedIndex="{Binding ComboBoxSelectedIndex}"
+        	Width="{Binding ComboBoxWidth}" 								
+        	Height="{Binding ComboBoxHeight}"
+        	HorizontalAlignment="{Binding ComboBoxAlignment}"
+        	VerticalAlignment="Center" 
+        	Style="{DynamicResource ComboBox}"/>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,503 @@
+FILE_MENU_TOOLBAR
+Load = Load
+Shortlist = Shortlist
+Search = Search
+Clear = Clear
+Tools = Tools
+Help = Help
+
+LOAD_LIST
+Load FM2009 = Load FM2009
+Exit = Exit
+
+SHORTLIST_LIST
+Import Shortlist = Import Shortlist
+Export Shortlist = Export Shortlist
+Export Selected Shortlist = Export Selected Shortlist
+Add To Shortlist = Add To Shortlist
+View Shortlist = View Shortlist
+
+SEARCH_LIST
+Players View = Players View
+Staff View = Staff View
+Teams View = Teams View
+MultiSearch View = MultiSearch View
+Search Now = Search Now
+Profile View = Profile View
+
+CLEAR_LIST
+Clear MultiSearch Fields = Clear MultiSearch Fields
+Clear Player Fields = Clear Player Fields
+Clear Staff Fields = Clear Staff Fields
+Clear Team Fields = Clear Team Fields
+Clear All Fields = Clear All Fields
+
+TOOLS_LIST
+Preferences = Preferences
+
+HELP_LIST
+About = About
+Donate = Donate
+
+TOOLBAR_MENU
+Bug Report = Bug Report
+Email = Email
+Homepage = Homepage
+Clear Current Fields = Clear Current Fields
+Clear Current Table = Clear Current Table
+Save Editing Current Profile = Save Editing Current Profile
+Cancel Editing Current Profile = Cancel Editing Current Profile
+Active InGame Object = Active InGame Object
+Show MiniScout = Show MiniScout
+
+TREE_TOOLBAR
+Previous = Previous
+Next = Next
+
+TREE_NODES
+MultiSearch = MultiSearch
+Players = Players
+Search Players = Search Players
+Players Attributes = Players Attributes
+More Options = More Options
+Player Profile = Player Profile
+Staff = Staff
+Search Staff = Search Staff
+Staff Attributes = Staff Attributes
+Staff Profile = Staff Profile
+Teams = Teams
+Search Teams = Search Teams
+Team Profile = Team Profile
+Shortlist = Shortlist
+
+MULTISEARCH_SEARCH
+Name = Name
+Nation = Nation
+Type = Type
+Region = Region
+
+BUTTONS
+Search = Search
+
+PLAYERS_SEARCH
+Full Name = Full Name
+Nation = Nation
+Club = Club
+Region = Region
+Age = Age
+CA = CA
+PA = PA
+Value = Value
+Sale Value = Sale Value
+Position = Position
+Sides = Sides
+Regen = Regen
+EU = EU
+Best Position = Best Position
+Positional Rating = Positional Rating
+Contract Status = Contract Status
+Ownership = Ownership
+
+PLAYERS_BUTTONS
+Wonderkids = Wonderkids
+Back To Players Search = Back To Players Search
+View Goalkeeping Skills = View Goalkeeping Skills
+View Technical Skills = View Technical Skills
+Heal = Heal
+
+PLAYERS_POSITIONS_SIDES
+GoalKeeper = GoalKeeper
+Sweeper = Sweeper
+Defender = Defender
+WingerBack = WingerBack
+Def Midfielder = Def Midfielder
+Midfielder = Midfielder
+Att Midfielder = Att Midfielder
+Forward-Striker = Forward-Striker
+Left = Left
+Right = Right
+Centre = Centre
+Free Role = Free Role
+
+PLAYER_COLUMNS
+ADiff = ADiff
+Best PR = Best PR
+Best PR% = Best PR%
+Contract Starting = Contract Starting
+Contract Expiring = Contract Expiring
+Current Wage = Current Wage
+
+PLAYER_PROFILE_GROUPBOXES
+Personal Details = Personal Details
+Contract Details = Contract Details
+Technical Skills = Technical Skills
+Mental Skills = Mental Skills
+Physical Skills = Physical Skills
+Hidden Skills = Hidden Skills
+Reputation = Reputation
+Other = Other
+
+PLAYER_DETAILS_DEFAULT
+ID = ID
+Full Name = Full Name
+Nationality = Nationality
+Birth Date = Birth Date
+Age = Age
+Height = Height
+Weight = Weight
+Value = Value
+Sale Value = Sale Value
+International = International
+CA = CA
+PA = PA
+Position = Position
+No Date = No Date
+No Squad = No Squad
+Positional Rating: = Positional Rating:
+Best as: = Best as:
+None = None
+
+PLAYER_CONTRACT_DETAILS
+Club = Club
+Team Squad = Team Squad
+Contract Started = Contract Started
+Contract Expiry = Contract Expiry
+Basic Wage = Basic Wage
+Appearance Bonus = Appearance Bonus
+Goal Bonus = Goal Bonus
+
+PLAYER_OTHER_DETAILS
+Condition = Condition
+Morale = Morale
+Jadedness = Jadedness
+Happyness = Happyness
+Squad No = Squad No
+Left Foot = Left Foot
+Right Foot = Right Foot
+
+PLAYER_REPUTATION
+World = World
+National = National
+Local = Local
+
+PLAYER_ATTRIBUTES
+Corners = Corners
+Crossing = Crossing
+Dribbling = Dribbling
+Finishing = Finishing
+First Touch = First Touch
+Free Kicks = Free Kicks
+Heading = Heading
+Long Shots = Long Shots
+Long Throws = Long Throws
+Marking = Marking
+Passing = Passing
+Penalty Taking = Penalty Taking
+Tackling = Tackling
+Technique = Technique
+Acceleration =Acceleration
+Agility = Agility
+Balance = Balance
+Jumping = Jumping
+Natural Fitness = Natural Fitness
+Pace = Pace
+Stamina = Stamina
+Strength = Strength
+Left Foot = Left Foot
+Right Foot = Right Foot
+Aggression = Aggression
+Anticipation =Anticipation
+Bravery = Bravery
+Composure = Composure
+Concentration = Concentration
+Creativity = Creativity
+Decisions = Decisions
+Determination = Determination
+Flair = Flair
+Influence = Influence
+Off The Ball = Off The Ball
+Positioning = Positioning
+Team Work = TeaM Work
+WorkRate = WorkRate
+Consistency = Consistency
+Dirtyness = Dirtyness
+Important Matches = Important Matches
+Injury Proneness = Injury Proneness
+Versatility = Versatility
+Aerial Ability = Aerial Ability
+Command Of Area = Command Of Area
+Communication = Communication
+Eccentricity = Eccentricity
+Handling = Handling
+Kicking = Kicking
+One On Ones = One On Ones
+Reflexes = Reflexes
+Rushing Out = Rushing Out
+Tendency To Punch = Tendency To Punch
+Throwing = Throwing
+
+STAFF_SEARCH
+Full Name = Full Name
+Nation = Nation
+Club = Club
+Role = Role
+Region = Region
+Age = Age
+CA = CA
+PA = PA
+Regen = Regen
+Contract Status = Contract Status
+
+STAFF_BUTTONS
+WonderStaff = WonderStaff
+Back To Staff Search = Back To Staff Search
+
+STAFF_COLUMNS
+ADiff = ADiff
+Best PR = Best PR
+Best PR% = Best PR%
+Contract Started = Contract Started
+Contract Expiring = Contract Expiring
+Current Wage = Current Wage
+
+STAFF_PROFILE_GROUPBOXES
+Personal Details = Personal Details
+Contract Details = Contract Details
+Coaching Skills = Coaching Skills
+Mental Skills = Mental Skills
+Tactical Skills = Tactical Skills
+Chairman Skills = Chairman Skills
+Tactical Skills = Tactical Skills
+Non Tactical Skills = Non Tactical Skills
+
+STAFF_DETAILS_DEFAULT
+ID = ID
+Full Name = Full Name
+Nationality = Nationality
+Birth Date = Birth Date
+International = International
+Age = Age
+CA = CA
+PA = PA
+No Date = No Date
+None = None
+
+STAFF_CONTRACT_DETAILS
+Club = Club
+Role = Role
+Contract Started = Contract Started
+Contract Expiry = Contract Expiry
+Basic Wage = Basic Wage
+
+STAFF_ATTRIBUTES
+Attacking = Attacking
+Defending = Defending
+Fitness = Fitness
+Goalkeepers = Goalkeepers
+Mental = Mental
+Player = Player
+Tactical = Tactical
+Technical = Technical
+Man Management = Man Management
+Working With Youngsters = Working With Youngsters
+Adaptability = Adaptability
+Ambition = Ambition
+Controversy = Controversy
+Determination = Determination
+Loyalty = Loyalty
+Pressure = Pressure
+Professionalism = Professionalism
+Sportsmanship = Sportsmanship
+Temperament = Temperament
+Judging Player Ability = Judging Player Ability
+Judging Player Potential = Judging Player Potential
+Level Of Discipline = Level Of Discipline
+Motivating = Motivating
+Physiotherapy = Physiotherapy
+Tactical Knowledge = Tactical Knowledge
+Depth = Depth
+Directness = Directness
+Flamboyancy = Flamboyancy
+Flexibility = Flexibility
+Free Roles = Free Roles
+Marking = Marking
+Offside = Offside
+Pressing = Pressing
+Sitting Back = Sitting Back
+Tempo = Tempo
+Use Of Playmaker = Use Of Playmaker
+Use Of Substitutions = Use Of Substitutions
+Width = Width
+Buying Players = Buying Players
+Hardness Of Training = Hardness Of Training
+Mind Games = Mind Games
+Squad Rotation = Squad Rotation
+Business = Business
+Interference = Interference
+Patience = Patience
+Resources = Resources
+
+TEAM_SEARCH
+Name = Name
+Nation = Nation
+Stadium = Stadium
+Team Type = Team Type
+Reputation = Reputation
+Region = Region
+Transfer Budget = Transfer Budget
+Wage Budget = Wage Budget
+
+TEAM_BUTTONS
+WonderTeams = WonderTeams
+
+TEAM_PROFILE_GROUPBOXES
+General Details = General Details
+Finance Details = Finance Details
+Stadium Details = Stadium Details
+
+TEAM_DETAILS_DEFAULT
+ID = ID
+Name = Name
+Nationality = Nationality
+
+TEAM_GENERAL_DETAILS
+Year Founded = Year Founded
+National = National
+Status = Status
+Max Affiliates Clubs = Max Affiliates Clubs
+Affiliated Clubs = Affiliated Clubs
+Training Ground = Training Ground
+Youth Ground = Youth Ground
+Youth Academy = Youth Academy
+Max Attendance = Max Attendance
+Average Attendance = Average Attendance
+Min Attendance = Min Attendance
+Reputation = Reputation
+
+TEAM_FINANCE_DETAILS
+Total Transfer = Total Transfer
+Remaining Transfer = Remaining Transfer
+Transfer Balance = Transfer Balance
+Total Wage = Total Wage
+Revenue Available = Revenue Available
+
+TEAM_STADIUM_DETAILS
+ID = ID
+Name = Name
+Owner = Owner
+City = City
+Nearby Stadium = Nearby Stadium
+
+TEAM_ATTRIBUTES
+Status = Status
+Stadium = Stadium
+Transfer Budget = Transfer Budget
+Remaining Budget = Remaining Budget
+Wage Budget = Wage Budget
+Budget Balance = Budget Balance
+Transfer Revenue Available = Transfer Revenue Available
+Current Affiliated Clubs = Current Affiliated Clubs
+Max Affiliated Clubs = Max Affiliated Clubs
+Training Ground = Training Ground
+Maximum Attendance = Maximum Attendance
+Average Attendance = Average Attendance
+Minimum Attendance = Minimum Attendance
+Decay = Decay
+Field Width = Field Width
+Field Length = Field Length
+Current Capacity = Current Capacity 
+Seating Capacity = Seating Capacity
+Expansion Capacity = Expansion Capacity
+Used Capacity = Used Capacity
+
+PREFERENCES_MENU
+General = General
+Player Columns = Player Columns
+Staff Columns = Staff Columns
+Team Columns = Team Columns
+Shortlist Columns = Shortlist Columns
+General Settings = General Settings
+Player Column Settings = Player Column Settings
+Staff Column Settings = Staff Column Settings
+Team Column Settings = Team Column Settings
+Shortlist Column Settings = Shortlist Column Settings
+
+PREFERENCES_BUTTONS
+Save Settings = Save Settings
+Save Theme = Save Theme
+
+PREFERENCES_COMBOBOXES
+Currency = Currency
+Wages = Wages
+Distance/Height = Distance/Height
+Weight = Weight
+Allow Editing = Allow Editing
+Language = Language
+Settings = Settings
+
+PREFERENCES_COMBOBOXES_OPTIONS
+British Pound = British Pound
+Euro = Euro
+US Dollars = US Dollars
+
+Weekly = Weekly
+Monthly = Monthly
+Yearly = Yearly
+
+Meters = Meters
+Centimeters = Centimeters
+
+Kilos = Kilos
+Pounds = Pounds
+
+English = English
+
+PREFERENCES_VISUAL_SETTINGS
+Themes = Themes
+Background Colors = Background Colors
+Text Colors = Text Colors
+Profile Attribute Text Colors = Profile Attribute Text Colors
+Special Table Text Colors = Special Table Text Colors
+Other Special Text Colors = Other Special Text Colors
+File Menu = File Menu
+Tree = Tree
+Settings Panel = Settings Panel
+Table = Table
+Search Fields = Search Fields
+Profile Fields = Profile Fields
+Profile Fields (Edit) = Profile Fields (Edit)
+Main = Main
+Font = Font
+
+Low Attribute = Low Attribute
+Medium Attribute = Medium Attribute
+Good Attribute = Good Attribute
+Excellent Attribute = Excellent Attribute
+
+Free Player = Free Player
+Loaned Player = Loaned Player
+CoContracted Player = CoContracted Player
+Free Staff = Free Staff
+
+Main Toolbar = Main Toolbar
+Tree Toolbar = Tree Toolbar
+Game Date Text = Game Date Text
+Table Grid = Table Grid
+
+OTHER_TEXT_USED
+No budget = No budget
+Nation Players = Nation Players
+Yes = Yes
+No = No
+None = None
+Unavailable = Unavailable
+Not Loaded = Not Loaded
+Loaded = Loaded
+Current Game Date = Current Game Date
+Game Status = Game Status
+Current Settings = Current Settings
+Successfully Loaded = Successfully Loaded
+Error Loading = Error Loading
+Make sure you have a new or loaded game of FM 2009 up and running = Make sure you have a new or loaded game of FM 2009 up and running
+Loading FM 2009...Please wait = Loading FM 2009...Please wait
+Calculating Positional Ratings = Calculating Positional Ratings

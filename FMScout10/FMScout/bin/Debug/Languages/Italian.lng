@@ -1,0 +1,726 @@
+﻿#currencies
+Sterlina inglese
+Euro
+Dollaro americano
+
+#wages
+Settimanale
+Mensile
+Annuale
+
+#heights
+Centimetri
+Metri
+
+#weights
+Kilo
+Grammi
+
+#yesno
+Si
+No
+
+#contractstatuses
+Scadenza (6 mesi)
+Scadenza (1 anno)
+Svincolati
+
+#regions
+Africana
+Asiatica
+Europea
+Nord Americana
+Sud Americanana
+Oceaniana
+
+#WindowGeneralLabels
+Impostazioni Generali
+Valuta
+Stipendio
+Distanza/Altezza
+Peso
+Consenti Revisione
+Lingua
+Tema
+GiovaniFenom Mass Anni
+GiovaniFenom Min PA
+StaffFenom Min PA
+SquadreFenom Min Rep  
+cm
+mt
+kg
+gr
+
+#WindowPreferencesLabels
+Preferenze
+Impostazioni
+Impostazioni Generali
+Colonna Giocatore
+Colonna Staff
+Colonna Squadra
+Colonna Selezionati
+Colonna Impostazione Giocatore
+Colonna Impostazione Staff
+Colonna Impostazione Squadra
+Colonna Impostazione Preferiti
+Selezione Tutto
+Pulisci
+Default
+Usa Modifiche
+Cancella Modifiche
+Salva impostazioni personalizzate se vuoi riaverle
+la prossima volta che usi Scout oppure clicca qui per rimuovere.
+Salva impostazioni attuali
+Cancella impostazioni attuali
+Imposta come default
+Usa modifiche senza salvare
+Chiudete la finestra
+
+#WindowAboutLabels
+FM Assistant10
+OK
+Utility scouting in tempo reale per FM 2010 10.3.
+Un ringraziamento speciale va a DrBernhard presso il SIGames forums per il lavoro svolto su FM2010 Ingame/Scout Framework.
+Grazie a Stam per il suo aiuto con le icone.
+Molti ringraziamenti a tutti i miei beta tester.
+Localizzazione Credits
+Italiano: Giovanni
+Turco: Ufuk
+Contact Details
+FMAssistant10 Homepage
+Email me
+Bug Report
+
+#WindowLoadingLabels
+Cerco FM 2010 10.3 ...Aspetta per favore
+Ho trovato FM 2010
+Carico Data
+Carico FM Data
+Generazione Scout Data
+Carico FM 2010
+in
+secondi
+Error Caricamento FM 2010 10.3
+Assicuratevi di avere una nuova versione di FM 2010 10.3 pronta e funzionante
+Chiusura in
+
+#WindowDonateLabels
+Donazioni Per FM Assistant10
+Yes you rock!
+No but you still rock!
+Questo strumento è e sarà sempre fornito a voi come una libera Utility per rendere il vostro gioco ancora più piacevole.
+Tuttavia, se si desidera incoraggiare questo progetto potete farlo con una piccola donazione o con un semplice, grazie :)
+May the FM force be with you Kostas.
+
+#WindowInfoLabels
+Impostazioni Attuali
+Impostazioni Gioco
+Stato Gioco
+Caricamento
+Versione Gioco
+Giocatori
+Staff
+Squadre
+Impostazioni Scout
+Impostazioni
+Lingua
+Tema
+Valuta
+Stipendio
+Altezza
+Peso
+Editor Impostazioni
+Modifica Impostazioni
+
+#WindowCustomizeColumnsLabels
+Personalizza Colonne
+
+#MenuLabels
+Caricare
+Uscita
+Preferiti
+Importa Preferiti
+Esporta Preferiti
+Esporta Preferiti Selezionati
+Agg a Preferiti
+Ricerca
+Vedere Giocatori
+Vedere Staff
+Vedere Squadre
+Vedere Preferiti
+Ricerca Adesso
+Pulisci
+Pulisci Campi Giocatore
+Pulisci Campi Staff
+Pulisci Campi Squadra
+Pulisci Preferiti
+Pulisci Tutto
+Strumenti
+Preferenze
+Aiuto
+About
+Donazione
+
+#WindowMainLabels
+Giocatori
+Staff
+Squadre
+Preferiti
+Generale
+Attributi
+Data Corrente del Gioco
+Schermo Corrente del Gioco
+Mostra Info
+Nascondi Info
+
+#GeneralSearchLabels
+Ricerca
+Risultati
+Personalizza Colonne
+
+#PlayerSearchLabels
+Nome
+nome
+Nazione
+nazione
+Club
+club
+Regione
+Anni
+CA
+PA
+PR%
+Miglior PR
+Ingaggio
+Valore
+Valore Vendita
+Stato Contratto
+Proprietà
+EU
+Rigenerati
+Pref Piede
+Lato
+Posizione
+Por
+Lib
+D
+TF
+M
+CC
+TC
+P
+L
+R
+C
+Libero
+F
+
+#StaffSearchLabels
+Nome
+nome
+Nazione
+nazione
+Club
+club
+Ruolo
+Regione
+Anni
+CA
+PA
+Stato Contratto
+Miglior CR
+Rigenerati
+
+#TeamSearchLabels
+Nome
+nome
+Nazione
+nazione
+Stadio
+stadio
+Tipo Squadra
+Reputazione
+Regione
+Fondo Trasferimenti
+Fondo Stipendi
+
+#PlayerProfileLabels
+Vista Tecnica
+Vista Portiere
+Positional Rating:
+Migliore come:
+Team Squad
+Inizio Contratto
+Fine Contratto
+Ingaggio Base
+Bonus Presenze
+Bonus Goal
+Bonus Porta Inviolata
+Condizione
+Salute
+Morale
+Stanchezza
+Felicità
+Nr. Squadra
+Piede Sinistro
+Piede Destro
+
+#StaffProfileLabels 
+Inizio Contratto
+Fine Contratto
+Ingaggio Base
+
+#SearchingResults
+Ricerca
+Ricercare
+Stop
+giocatore trovato
+giovanefenom trovato
+staff trovato
+stafffenom trovato
+squadra trovata
+squadrafenom trovata
+registrazione preferiti
+Chiedere
+sec
+Calcolato PR per
+Calcolato CR per
+giocatori
+staff
+squadre
+Giovanifenom
+StaffFenom
+SquadreFenom
+Giocatore Libero
+Agente Libero
+
+#ProfileGenericLabels
+Nessuno
+Non disponibile
+Sconosciuto
+No
+Si
+Agg Ai Preferiti
+Rimuovi Dai Preferiti
+Tutte Le Squadre
+Squadra
+Scoperto
+Anni
+No HG
+Cresciuto:
+EU Membro:
+Nessun Valore Vendita
+Ambidestro
+Piedde Sinistro
+Piede Destro
+No Ruolo
+No Contratto
+No Ingaggio
+No Bonus
+tocco
+goals
+Non Un Rigen
+E' Rigen
+Nazionalità Giocatori
+Lista Giocatori
+Lista Staff
+Heal Squadra
+Nessun Bilancio
+Nessuna Proprietà
+Nessun Luogo
+No Vicino Stadio
+Vuoto
+Att
+Regista
+Ruolo Libero
+Club HG
+Nazione HG
+
+#TeamProfileLabels
+Anno Fondazione
+Nazionalità
+Stato
+Max Affiliazione Clubs
+Affiliazione Clubs
+Strutture Allenamenti
+Strutture Giovani
+Scuola Calcio
+Max Spettatori
+Media Spettatori
+Min Spettatori
+Reputazione
+Bilancio Totale Trasferimenti
+Bilancio Rimanente Trasferimenti
+Bilancio
+Bilancio Totale Stipendi
+Bilancio Stipendi Usato
+Entrate Disponibili
+Fallimento
+Dimensioni Campo
+Lunghezza Campo
+Capacità Attuali
+Capienza
+Espansione capacità
+Capacità utilizzata
+
+#WindowProfileLabels
+Profili Giocatori
+Profili Staff
+Profili Squadra
+Lista Giocatori
+Lista Staff
+Lista Squadre
+
+#playerSearchAttributesGroupBoxes
+Attributi Tecnici
+Attributi Fisici
+Attributi Mentali
+Attributi Nascosti
+Attributi Portiere
+Caratteristiche Mentali
+Dettagli Personali
+Dettagli Contratto
+Altri Attributi
+
+#prefFoots                                    
+Ambidestro
+Destro
+Sinistro
+
+#bestprs
+POR
+DC
+DS
+DD
+DMC
+DMS
+DMD
+TC
+TS
+TD
+Fast FC
+Target FC
+
+#ownerShips
+Prestito
+Comproprietà
+
+#staffSearchAttributesGroupBoxes
+Attributi Tattici
+Attributi Mentali
+Attributi Allenatore
+Attributi Non Tattici
+Attributi Presidente
+Dettagli Personali
+Dettagli Contratto
+Miglior Valutazione
+
+#staffDisplayRatings
+Fit 
+Por 
+Tat 
+CP 
+Dif 
+Att 
+Tiro 
+CPiaz 
+
+#staffRoles
+Presidente
+Direttore
+Allenatore
+Allenatore IN 2ª
+Preparatore 1ª Squadra
+Allenatore Giovanili
+Preparatore
+1st/Giovani/Allenatore
+Preparatore Attletico
+Preparatore Portieri
+Fisioterapista
+Osservatore
+
+#bestcrs
+Fitness 
+Portiere 
+Tattica 
+Controllo Palla 
+Difesa 
+Attacco
+Tiro 
+Calci Piazzati
+
+#teamGroupBoxes
+Generale
+Dettagli Finanze
+Dettagli Stadio
+
+#teamtypes
+Nazionale
+Club
+
+#reputations
+MOndiale
+Nazionale
+Locale
+Sconosciuto
+
+#playerColumns
+S
+ID
+Nome
+Nazione
+Club
+Squadra
+Posizione
+Anni
+CA
+PA
+ADiff
+Miglior PR
+Miglior PR%
+Valore Attuale
+Valore Vendita
+Inizio Contratto
+Fine Contratto
+Stipendio Attuale
+Reputazione Mondiale
+Reputazione Nazionale
+Reputazione Locale
+Corners
+Cross
+Dribbling
+Finalizzazione
+Tocco Di Prima
+Tiri Liberi
+Heading
+Tiro Dala Distanza
+Rimessa Lunga
+Marcatura
+Passaggi
+Rigori
+Contrasti
+Tecnica
+Accelerazione
+Agilità
+Equilibrio
+Elevazione
+Integrità Fisica
+Velocità
+Resistenza
+Forza
+Piede Sinistro
+Piede Destro
+Aggressione
+Intuito
+Coraggio
+Freddezza
+Concentrazione
+Creatività
+Decisioni
+Determinazione
+Fantasia
+Carisma
+Senza Palla
+Posizione
+Gioco Squadra
+Impegno
+Consistenza
+Gioco Sporco
+Partite Importanti
+Propensione Infortuni
+Versatilità
+Palle Alte
+Autorità in Area
+Communicazione
+Eccentricità
+Blocca Tiri
+Rinvii
+Uno Contro Uno
+Riflessi
+Uscite
+Respinte Di Pugno
+Rilanci
+Adattabilità
+Ambizione
+Controversia
+Lealtà
+Pressione
+Professionalità
+Sportività
+Temperamento
+
+#staffColumns
+ID
+Nome
+Nazione
+Club
+Ruolo
+Anni
+CA
+PA
+ADiff
+Miglior CR
+Miglior CR Stelle
+Inizio Contratto
+Fine Contratto
+Stipendio Attuale
+Reputazione Mondiale
+Reputazione Nazionale
+Reputazione Locale
+Depth
+Franchezza
+Brillantezza
+Flessibilità
+Ruolo Libero
+Marcatura
+Fuori Gioco
+Pressing
+Rilassamento
+Ritmo
+Uso del Regista
+Uso delle Sostituzioni
+Ampiezza
+Adattabilità
+Ambizione
+Controversia
+Determinazione
+Lealtà
+Pressione
+Professionalità
+Sportvità
+Giudizio Abilità
+Giudizio Potenziale
+Livello di Disciplina
+Motivazione
+Fisioterapista
+Conoscenze Tattiche
+Attacco
+Difesa
+Fitness
+Portieri
+Mentale
+Giocatore
+Tattica
+Tecnica
+Gest Spogliatoio
+Lavoro Con Giovani
+Acquisto Giocatori
+Intensità Allenamenti
+Giochi Mentali
+Rotazione Giocatori
+Affari
+Interferenza
+Pazienza
+Risorse
+
+#teamColumns
+ID
+Nome
+Nazione
+Reputazione
+Stato
+Stadio
+Fondo Trasferimenti
+Fondo Rimanente
+Fondo Ingaggi
+Spesa Ingaggi
+Bilancio
+Entrate Disponibili Trasferimento
+Attuali Squadre Affiliate
+Max Squadre Affiliate
+Attrezzature Allenamento
+Strutture Giovanili
+Affluenza Massima
+Affluenza Media
+Affluenza Minima
+Fallimento
+Dimensione Campo
+Lunghezza Campo
+Capacità Attuali 
+Posti A Sederere
+Capacità Espansione
+Capacità Usata
+
+#shortlistColumns
+ID
+Nome
+Nazione
+Club
+Squadra
+Posizione
+Anni
+CA
+PA
+ADiff
+Miglior PR
+Miglior PR%
+Valore Attuale
+Valore Vendita
+Inizio Contratto
+Fine Contratto
+Ingaggio Attuale
+Reputazione Mondiale
+Reputazione Nazionale
+Reputazione Locale
+Corners
+Cross
+Dribbling
+Finalizzazione
+Tocco Di Prima
+Tiri Liberi
+Colpo Di Testa
+Tiri Da Lontano
+Rimesse Lunghe
+Marcatura
+Passaggi
+Rigori
+Contrasti
+Tecnica
+Accelerazione
+Agilità
+Equilibrio
+Elevazione
+Integrità Fisica
+Velocità
+Resistenza
+Forza
+Piede Sinistro
+Piede Destro
+Aggressione
+Anticipazione
+Coraggio
+Freddezza
+Concentrazione
+Creatività
+Decisioni
+Determinazione
+Fantasia
+Carisma
+Senza Palla
+Posizione
+Gioco Squadra
+Impegno
+Consistenza
+Gioco Sporco
+Partite Importanti
+Propensione Infortuni
+Versatilità
+Palle Alte
+Autorità in Area
+Communicazione
+Eccentricità
+Blocca Tiri
+Rinvii
+Uno Contro Uno
+Reflessi
+Uscite
+Respinte Di Pugno
+Rilanci
+Adattabilità
+Ambizione
+Controversia
+Lealtà
+Pressione
+Professionalità
+Sportività
+Temperamento

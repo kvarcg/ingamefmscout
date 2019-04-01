@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FBA79EF6-A268-4EE6-AE21-60E365B8D093}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FMScout</RootNamespace>
+    <AssemblyName>Ingame FMScout</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>soccer_4.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabControlEX, Version=0.0.3271.41578, Culture=neutral, PublicKeyToken=1db242dc828e4b4e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\TabControlEX.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlphaBlendTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AlphaTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CollapsibleSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DonationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonationForm.Designer.cs">
+      <DependentUpon>DonationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupBoxAdvanced.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniScoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniScoutForm.Designer.cs">
+      <DependentUpon>MiniScoutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreferencesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreferencesForm.designer.cs">
+      <DependentUpon>PreferencesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs">
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlphaBlendTextBox.resx">
+      <DependentUpon>AlphaBlendTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonationForm.resx">
+      <DependentUpon>DonationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniScoutForm.resx">
+      <DependentUpon>MiniScoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreferencesForm.resx">
+      <DependentUpon>PreferencesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TextBoxAdvanced.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="win32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer_3_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Configurator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left.png" />
+    <None Include="Resources\Right.png" />
+    <None Include="Resources\Down1.png" />
+    <None Include="Resources\pitch1.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\email.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\user_black.png" />
+    <None Include="Resources\user_white.png" />
+    <None Include="Resources\delete %282%29.png" />
+    <None Include="Resources\Add %2810%29.png" />
+    <None Include="Resources\Coinstack2.png" />
+    <None Include="Resources\user_all.png" />
+    <None Include="Resources\Zoom_in.png" />
+    <None Include="Resources\Bug.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\Down2.png" />
+    <None Include="Resources\England.png" />
+    <None Include="Resources\Edit file.png" />
+    <None Include="Resources\EditCancel.png" />
+    <None Include="Resources\user_green.png" />
+    <None Include="Resources\Down21.png" />
+    <None Include="Resources\deleteDisabled.png" />
+    <None Include="Resources\Back.png" />
+    <None Include="Resources\OnTop.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\OnTopDisabled.png" />
+    <None Include="Resources\Right2.png" />
+    <None Include="Resources\Right3.png" />
+    <None Include="Resources\Info2.png" />
+    <None Include="Resources\Minus.png" />
+    <None Include="Resources\background1.png" />
+    <None Include="Resources\moveLeft.png" />
+    <None Include="Resources\moveRight.png" />
+    <None Include="Resources\background2.png" />
+    <None Include="Resources\background3.png" />
+    <Content Include="Resources\NodeDefault.png" />
+    <Content Include="Resources\NodeExpanded.png" />
+    <Content Include="Resources\Right4.png" />
+    <None Include="Resources\Right5.png" />
+    <None Include="Resources\Star.png" />
+    <None Include="Resources\StarHigh.png" />
+    <None Include="Resources\tick.png" />
+    <Content Include="soccer_4.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

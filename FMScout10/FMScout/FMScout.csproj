@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A34372A6-FCB9-41B9-9CBF-89FD1B766720}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FMScout</RootNamespace>
+    <AssemblyName>FMAssistant10</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ExpressionBlendVersion>3.0.1927.0</ExpressionBlendVersion>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SkipPostSharp</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PostSharp, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b13fd38b8f9c99d7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\scoutframeworkfm2010\ExternalDLL\PostSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationTypes">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Controls\UserControls\LabeledComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\UserControls\LabeledImage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\UserControls\LabeledNumericUpDown.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\UserControls\LabeledNumericUpDownMinMax.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\UserControls\LabeledNumericUpDownMinMaxAttributes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\UserControls\LabeledTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\UserControls\LabeledTextBoxAutoComplete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\UserControls\LabeledTextBoxProfile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataContext\DataContext.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\CustomControls\Contents\InfoTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\CustomControls\Contents\NumericUpDown.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\CustomControls\CustomControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\Button.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\CheckBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\ComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\ContextMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\DataGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\General.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\GroupBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\HyperLink.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\MenuItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\NumericUpDown.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\Profiles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\ProgressBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\RichTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\Scrollbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\TabControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\TabItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\Label.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\Contents\TextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme\DarkTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\Button.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\CheckBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\ComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\ContextMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\DataGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\General.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\GroupBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\HyperLink.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\Label.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\MenuItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\NumericUpDown.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\Profiles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\ProgressBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\RichTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\Scrollbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\TabControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\TabItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\Contents\TextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\StamDark\StamDark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\WindowQuickColumns.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\ProfileWindow\PlayerProfile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\ProfileWindow\StaffProfile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\ProfileWindow\TeamProfile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\WindowInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\WindowLoading.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\MainWindow\PlayerSearchAttributes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\MainWindow\StaffSearchAttributes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\WindowMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\PreferencesWindow\GeneralTabItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\PreferencesWindow\PlayerColumnsTabItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\PreferencesWindow\ShortlistColumnsTabItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\PreferencesWindow\StaffColumnsTabItem..xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\PreferencesWindow\TeamColumnsTabItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\MainWindow\PlayerSearchTabItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\MainWindow\ShortlistTabItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\MainWindow\StaffSearchTabItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\MainWindow\TeamSearchTabItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\WindowAbout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\WindowDonate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\WindowPreferences.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ApplicationIcons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\WindowProfile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\Windows\WindowMain.xaml.cs">
+      <DependentUpon>WindowMain.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlContext\CheckBoxContext.cs" />
+    <Compile Include="ControlContext\DataGridContext.cs" />
+    <Compile Include="ControlContext\ImageButtonContext.cs" />
+    <Compile Include="ControlContext\ImageTextButtonContext.cs" />
+    <Compile Include="ControlContext\INotifier.cs" />
+    <Compile Include="ControlContext\LabeledComboBoxContext.cs" />
+    <Compile Include="ControlContext\LabeledContext.cs" />
+    <Compile Include="ControlContext\LabeledHeaderContext.cs" />
+    <Compile Include="ControlContext\LabeledImageContext.cs" />
+    <Compile Include="ControlContext\LabeledNumericContext.cs" />
+    <Compile Include="ControlContext\LabeledNumericMinMaxContext.cs" />
+    <Compile Include="ControlContext\LabeledTextBoxContext.cs" />
+    <Compile Include="ControlContext\PlayerRatingsContext.cs" />
+    <Compile Include="ControlContext\TextBlockContext.cs" />
+    <Compile Include="Controls\CustomControls\AutoCompleteTextBox.cs" />
+    <Compile Include="Controls\CustomControls\CloseableButton.cs" />
+    <Compile Include="Controls\CustomControls\InfoTextBox.cs" />
+    <Compile Include="Controls\CustomControls\NumericUpDown.cs" />
+    <Compile Include="Controls\CustomControls\Util.cs" />
+    <Compile Include="Controls\UserControls\LabeledComboBox.xaml.cs">
+      <DependentUpon>LabeledComboBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserControls\LabeledImage.xaml.cs">
+      <DependentUpon>LabeledImage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserControls\LabeledNumericUpDown.xaml.cs">
+      <DependentUpon>LabeledNumericUpDown.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserControls\LabeledNumericUpDownMinMax.xaml.cs">
+      <DependentUpon>LabeledNumericUpDownMinMax.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserControls\LabeledNumericUpDownMinMaxAttributes.xaml.cs">
+      <DependentUpon>LabeledNumericUpDownMinMaxAttributes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserControls\LabeledTextBox.xaml.cs">
+      <DependentUpon>LabeledTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserControls\LabeledTextBoxAutoComplete.xaml.cs">
+      <DependentUpon>LabeledTextBoxAutoComplete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserControls\LabeledTextBoxProfile.xaml.cs">
+      <DependentUpon>LabeledTextBoxProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserControls\TransitionPresenter\ClothTransition.cs" />
+    <Compile Include="Controls\UserControls\TransitionPresenter\DoorTransition.cs" />
+    <Compile Include="Controls\UserControls\TransitionPresenter\ExplosionTransition.cs" />
+    <Compile Include="Controls\UserControls\TransitionPresenter\FadeTransition.cs" />
+    <Compile Include="Controls\UserControls\TransitionPresenter\FlipTransition.cs" />
+    <Compile Include="Controls\UserControls\TransitionPresenter\PageTransition.cs" />
+    <Compile Include="Controls\UserControls\TransitionPresenter\RotateTransition.cs" />
+    <Compile Include="Controls\UserControls\TransitionPresenter\StoryboardTransition.cs" />
+    <Compile Include="Controls\UserControls\TransitionPresenter\Transition.cs" />
+    <Compile Include="Controls\UserControls\TransitionPresenter\Transition3D.cs" />
+    <Compile Include="Controls\UserControls\TransitionPresenter\TransitionElement.cs" />
+    <Compile Include="Controls\UserControls\TransitionPresenter\TransitionSelector.cs" />
+    <Compile Include="Controls\UserControls\TransitionPresenter\TranslateTransition.cs" />
+    <Compile Include="Controls\UserControls\TransitionPresenter\TwoWayTransitionSelector.cs" />
+    <Compile Include="Logic\Language.cs" />
+    <Compile Include="Logic\Localization.cs" />
+    <Compile Include="Logic\PreferencesSettings.cs" />
+    <Compile Include="Logic\ScoutContext.cs" />
+    <Compile Include="Logic\SearchUI.cs" />
+    <Compile Include="ViewModel\AboutWindowViewModel.cs" />
+    <Compile Include="ViewModel\DataGridContextMenuViewModel.cs" />
+    <Compile Include="ViewModel\DonateWindowViewModel.cs" />
+    <Compile Include="ViewModel\InfoWindowViewModel.cs" />
+    <Compile Include="ViewModel\LoadingWindowViewModel.cs" />
+    <Compile Include="ViewModel\MainWindowViewModel.cs" />
+    <Compile Include="ViewModel\MainWindow\GridViewModel.cs" />
+    <Compile Include="ViewModel\MainWindow\PlayerSearchAttributesViewModel.cs" />
+    <Compile Include="ViewModel\MainWindow\PlayerSearchTabItemViewModel.cs" />
+    <Compile Include="ViewModel\MainWindow\SearchViewModel.cs" />
+    <Compile Include="ViewModel\MainWindow\ShortlistTabItemViewModel.cs" />
+    <Compile Include="ViewModel\MainWindow\StaffSearchAttributesViewModel.cs" />
+    <Compile Include="ViewModel\MainWindow\StaffSearchTabItemViewModel.cs" />
+    <Compile Include="ViewModel\MainWindow\TeamSearchTabItemViewModel.cs" />
+    <Compile Include="ViewModel\PreferencesWindow\GeneralTabItemViewModel.cs" />
+    <Compile Include="ViewModel\PreferencesWindow\PreferencesWindowViewModel.cs" />
+    <Compile Include="ViewModel\ProfileWindow\ProfilePlayerViewModel.cs" />
+    <Compile Include="ViewModel\ProfileWindow\ProfileStaffViewModel.cs" />
+    <Compile Include="ViewModel\ProfileWindow\ProfileTeamViewModel.cs" />
+    <Compile Include="ViewModel\ProfileWindow\ProfileViewModel.cs" />
+    <Compile Include="ViewModel\ProfileWindowViewModel.cs" />
+    <Compile Include="ViewModel\QuickColumnsWindowViewModel.cs" />
+    <Compile Include="ViewModel\CustomWindowViewModel.cs" />
+    <Compile Include="View\Windows\WindowQuickColumns.xaml.cs">
+      <DependentUpon>WindowQuickColumns.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\ProfileWindow\PlayerProfile.xaml.cs">
+      <DependentUpon>PlayerProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\ProfileWindow\StaffProfile.xaml.cs">
+      <DependentUpon>StaffProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\ProfileWindow\TeamProfile.xaml.cs">
+      <DependentUpon>TeamProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\WindowInfo.xaml.cs">
+      <DependentUpon>WindowInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\WindowLoading.xaml.cs">
+      <DependentUpon>WindowLoading.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\MainWindow\PlayerSearchAttributes.xaml.cs">
+      <DependentUpon>PlayerSearchAttributes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\MainWindow\StaffSearchAttributes.xaml.cs">
+      <DependentUpon>StaffSearchAttributes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\PreferencesWindow\GeneralTabItem.xaml.cs">
+      <DependentUpon>GeneralTabItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\PreferencesWindow\PlayerColumnsTabItem.xaml.cs">
+      <DependentUpon>PlayerColumnsTabItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\PreferencesWindow\ShortlistColumnsTabItem.xaml.cs">
+      <DependentUpon>ShortlistColumnsTabItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\PreferencesWindow\StaffColumnsTabItem..xaml.cs">
+      <DependentUpon>StaffColumnsTabItem..xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\PreferencesWindow\TeamColumnsTabItem.xaml.cs">
+      <DependentUpon>TeamColumnsTabItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\MainWindow\PlayerSearchTabItem.xaml.cs">
+      <DependentUpon>PlayerSearchTabItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\MainWindow\ShortlistTabItem.xaml.cs">
+      <DependentUpon>ShortlistTabItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\MainWindow\StaffSearchTabItem.xaml.cs">
+      <DependentUpon>StaffSearchTabItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\MainWindow\TeamSearchTabItem.xaml.cs">
+      <DependentUpon>TeamSearchTabItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\WindowAbout.xaml.cs">
+      <DependentUpon>WindowAbout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\WindowDonate.xaml.cs">
+      <DependentUpon>WindowDonate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\WindowPreferences.xaml.cs">
+      <DependentUpon>WindowPreferences.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\Globals.cs" />
+    <Compile Include="Logic\Settings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="View\Windows\WindowProfile.xaml.cs">
+      <DependentUpon>WindowProfile.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\FMScout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\FMScout.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FMScout.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\background1.png" />
+    <Resource Include="Resources\Images\background2.png" />
+    <Resource Include="Resources\Images\background3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\background4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\cancel.png" />
+    <Resource Include="Resources\Icons\clubs.png" />
+    <Resource Include="Resources\Icons\customize-columns-arrow.png" />
+    <Resource Include="Resources\Icons\drop-down-arrow.png" />
+    <Resource Include="Resources\Icons\drop-down-noarrow.png" />
+    <Resource Include="Resources\Icons\fm10.png" />
+    <Resource Include="Resources\Icons\football-pitch.png" />
+    <Resource Include="Resources\Icons\icon-default.png" />
+    <Resource Include="Resources\Icons\icon-delete.png" />
+    <Resource Include="Resources\Icons\icon-save.png" />
+    <Resource Include="Resources\Icons\logo.png" />
+    <Resource Include="Resources\Icons\search.png" />
+    <Resource Include="Resources\Icons\managers.png" />
+    <Resource Include="Resources\Icons\not-shortlisted.png" />
+    <Resource Include="Resources\Icons\players.png" />
+    <Resource Include="Resources\Icons\preferences.png" />
+    <Resource Include="Resources\Icons\shortlist.png" />
+    <Resource Include="Resources\Icons\shortlisted.png" />
+    <Resource Include="Resources\Icons\yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\logosmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\coinstack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\awards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\compare.png" />
+    <Resource Include="Resources\Icons\status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\10star.png" />
+    <Resource Include="Resources\Icons\1star.png" />
+    <Resource Include="Resources\Icons\2star.png" />
+    <Resource Include="Resources\Icons\3star.png" />
+    <Resource Include="Resources\Icons\4star.png" />
+    <Resource Include="Resources\Icons\5star.png" />
+    <Resource Include="Resources\Icons\6star.png" />
+    <Resource Include="Resources\Icons\7star.png" />
+    <Resource Include="Resources\Icons\8star.png" />
+    <Resource Include="Resources\Icons\9star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\add.png" />
+    <Resource Include="Resources\Icons\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\football-pitch2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\close2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,155 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:uc="clr-namespace:FMScout.UserControls"
+    mc:Ignorable="d"
+	x:Class="FMScout.View.MainWindow.PlayerSearchTabItem"
+	Width="Auto" Height="Auto"
+	d:DesignHeight="400">
+    <UserControl.Resources>
+        <ContextMenu x:Key="dataGridMenu" Style="{DynamicResource ContextMenu}">
+            <MenuItem Click="addShortlist_Click"
+				  Margin="4,0,4,0"
+                  Header="{Binding Path=addshortlist}"
+                  HeaderTemplate ="{StaticResource ImageTextButtonTemplate}"
+				  Style="{DynamicResource ContextMenuItem}"/>
+            <MenuItem Click="removeShortlist_Click"
+				  Margin="4,0,4,0"
+                  Header="{Binding Path=removeshortlist}"
+                  HeaderTemplate ="{StaticResource ImageTextButtonTemplate}"
+				  Style="{DynamicResource ContextMenuItem}"/>
+        </ContextMenu>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <GroupBox Style="{DynamicResource GroupBoxSearch}" x:Name="GroupBoxPlayersSearch" Header="{Binding Path=groupboxsearch.Header}" Grid.Row="0" Padding="0,0,0,0">
+            <WrapPanel>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+                    <GroupBox Style="{DynamicResource GroupBoxInnerSearch}" Padding="0,0,0,0" 
+				x:Name="GroupBoxPlayersSearch1" Grid.Row="0">
+                        <StackPanel Orientation="Vertical">
+                            <uc:LabeledTextBoxAutoComplete Margin="0,5,0,0" x:Name="fullName" DataContext="{Binding Path=fullName}"/>
+                            <uc:LabeledTextBoxAutoComplete Margin="0,2,0,0" x:Name="nation" DataContext="{Binding Path=nation}"/>
+                            <uc:LabeledTextBoxAutoComplete Margin="0,2,0,0" x:Name="club" DataContext="{Binding Path=club}"/>
+                            <uc:LabeledComboBox Margin="0,2,0,0" x:Name="region" DataContext="{Binding Path=region}"/>
+                        </StackPanel>
+                    </GroupBox>
+                    <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
+                        <Button Style="{DynamicResource ButtonSearch}" x:Name="ButtonSearch" 
+                                Margin="0,0,0,0" Width="Auto" Height="20" Padding="4,0,4,0"
+                                Content="{Binding Path=search}"
+                                ContentTemplate="{StaticResource ImageTextButtonTemplate}"/>
+                        <Button Style="{DynamicResource ButtonSearch}" x:Name="ButtonWonder" Margin="4,0,4,0" 
+                                Width="Auto" Height="20" Padding="4,0,4,0"
+                                Content="{Binding Path=wonder}"
+                                ContentTemplate="{StaticResource ImageTextButtonTemplate}"/>
+                    </StackPanel>
+                </Grid>
+                <GroupBox Style="{DynamicResource GroupBoxInnerSearch}" 
+				Padding="0,0,0,0" x:Name="GroupBoxPlayersSearch2">
+                    <WrapPanel>
+                        <StackPanel Margin="0,0,5,0">
+                            <uc:LabeledNumericUpDownMinMax Margin="0,4,0,0" x:Name="age" DataContext="{Binding Path=age}"/>
+                            <uc:LabeledNumericUpDownMinMax x:Name="pa" DataContext="{Binding Path=pa}"/>
+                            <uc:LabeledNumericUpDownMinMax x:Name="ca" DataContext="{Binding Path=ca}"/>
+                            <uc:LabeledNumericUpDownMinMax x:Name="pr" DataContext="{Binding Path=pr}"/>
+                            <uc:LabeledComboBox Margin="0,1,0,0" x:Name="bestpr" DataContext="{Binding Path=bestpr}"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <uc:LabeledNumericUpDownMinMax Margin="0,4,0,0" x:Name="wage" DataContext="{Binding Path=wage}"/>
+                            <uc:LabeledNumericUpDownMinMax x:Name="value" DataContext="{Binding Path=value}"/>
+                            <uc:LabeledNumericUpDownMinMax x:Name="saleValue" DataContext="{Binding Path=saleValue}"/>
+                            <uc:LabeledComboBox Margin="0,1,0,0" x:Name="contractStatus" DataContext="{Binding Path=contractStatus}"/>
+                            <uc:LabeledComboBox Margin="0,2,0,0" x:Name="ownership" DataContext="{Binding Path=ownership}"/>
+                        </StackPanel>
+                    </WrapPanel>
+                </GroupBox>
+                <GroupBox Style="{DynamicResource GroupBoxInnerSearch}" Padding="0,0,0,0" x:Name="GroupBoxPlayersSearch3" >
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <GroupBox Style="{DynamicResource GroupBoxInnerSearch}" Margin="0,0,0,0" 
+							Padding="0,0,0,0"
+							x:Name="GroupBoxPlayerPositons" Header="{Binding Path=positions.Header}">
+							<Grid x:Name="WrapPanelPositions">
+							<Grid.Background>
+							 	<ImageBrush ImageSource="{StaticResource pitch}" Stretch="None"/>
+							 </Grid.Background>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition/>
+								<ColumnDefinition/>
+								<ColumnDefinition/>
+								<ColumnDefinition/>
+							</Grid.ColumnDefinitions>
+                                <CheckBox Style="{DynamicResource CheckBox}" x:Name="GK" Margin="4,0,0,0" Content="{Binding Path=GK.Header}" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" />
+								<StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <CheckBox Style="{DynamicResource CheckBox}" x:Name="SW" Margin="0,5,0,0" Content="{Binding Path=SW.Header}"/>
+                                    <CheckBox Style="{DynamicResource CheckBox}" x:Name="D" Margin="0,5,0,0" Content="{Binding Path=D.Header}"/>
+                                    <CheckBox Style="{DynamicResource CheckBox}" x:Name="WB" Margin="0,5,0,5" Content="{Binding Path=WB.Header}"/>
+								</StackPanel>
+								<StackPanel Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <CheckBox Style="{DynamicResource CheckBox}" x:Name="DM" Margin="0,5,0,0" Content="{Binding Path=DM.Header}"/>
+                                    <CheckBox Style="{DynamicResource CheckBox}" x:Name="M" Margin="0,5,0,0" Content="{Binding Path=M.Header}"/>
+                                    <CheckBox Style="{DynamicResource CheckBox}" x:Name="AM" Margin="0,5,0,5" Content="{Binding Path=AM.Header}"/>
+								</StackPanel>
+                                <CheckBox Style="{DynamicResource CheckBox}" x:Name="ST" Margin="0,0,4,0" Content="{Binding Path=ST.Header}" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+							</Grid>								
+                            </GroupBox>
+                            <GroupBox Style="{DynamicResource GroupBoxInnerSearch}" Margin="4,0,4,0" 
+							x:Name="GroupBoxPlayerSides" Header="{Binding Path=sides.Header}" Padding="0,0,0,0">
+                                <WrapPanel Margin="0,0,0,0" x:Name="WrapPanelSides" Orientation="Horizontal" 
+								VerticalAlignment="Center">
+                                    <CheckBox Style="{DynamicResource CheckBox}" x:Name="L" Margin="0,1,0,0" Content="{Binding Path=left.Header}"/>
+                                    <CheckBox Style="{DynamicResource CheckBox}" x:Name="R" Margin="1,1,0,0" Content="{Binding Path=right.Header}"/>
+                                    <CheckBox Style="{DynamicResource CheckBox}" x:Name="C" Margin="1,1,0,0" Content="{Binding Path=center.Header}"/>
+                                    <CheckBox Style="{DynamicResource CheckBox}" x:Name="Free" Margin="1,1,0,0" Content="{Binding Path=free.Header}"/>
+                                </WrapPanel>
+                            </GroupBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Visibility="Visible"  HorizontalAlignment="Center" VerticalAlignment="Top">
+                            <uc:LabeledComboBox x:Name="eu" DataContext="{Binding Path=eu}"/>
+                            <uc:LabeledComboBox Margin="0,5,0,0" x:Name="regen" DataContext="{Binding Path=regen}"/>
+                            <uc:LabeledComboBox Margin="0,5,0,0" x:Name="prefFoot" DataContext="{Binding Path=prefFoot}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+            </WrapPanel>
+        </GroupBox>
+        <GroupBox Style="{DynamicResource GroupBoxGrid}" x:Name="GroupBoxPlayerDataGridView" 
+		Header="{Binding Path=groupboxresults.Header}" Grid.Row="1" Margin="0,0,0,0" Padding="0,0,0,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Style="{DynamicResource ButtonCustomize}" x:Name="ButtonColumns" Grid.Row="0" 
+			Width="Auto" Height="11" FontSize="8"
+			Margin="0,0,0,0" Padding="4,0,4,0" 
+			HorizontalAlignment="Right">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" FontWeight="Bold"
+                                       Text="{Binding Path=customizecolumns.Header}"/>
+                            <Image Margin="4,0,0,0" Stretch="Uniform" VerticalAlignment="Center" 
+				Height="11" Width="16"
+	            Source="{StaticResource customizecolumns}"/>	
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <DataGrid Style="{DynamicResource DataGrid}" x:Name="dataGrid" 
+                              Grid.Row="1" ItemsSource="{Binding Path=.}"/>
+                <ProgressBar x:Name="progressBar" Width="300" Height="20"
+				             HorizontalAlignment="Center" VerticalAlignment="Center"
+			                 Grid.Row="1" Style="{DynamicResource ProgressBarStyle}"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

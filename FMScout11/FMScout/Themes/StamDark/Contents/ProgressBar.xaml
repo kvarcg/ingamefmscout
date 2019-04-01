@@ -1,0 +1,55 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<LinearGradientBrush x:Key="ProgressBarBackground" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#CC363A3D" Offset="0"/>
+        <GradientStop Color="#CC363A3D" Offset="0.5"/>
+        <GradientStop Color="#CC363A3D" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ProgressBarBorder" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#CC404548" Offset="0"/>
+        <GradientStop Color="#CC404548" Offset="0.5"/>
+        <GradientStop Color="#CC404548" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ProgressBarForeground" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#885D8A9B" Offset="0"/>
+        <GradientStop Color="#8882A3AE" Offset="0.20"/>
+        <GradientStop Color="#AAB3C4C8" Offset="0.32"/>
+        <GradientStop Color="#AAB3C4C8" Offset="0.36"/>
+        <GradientStop Color="#885D8A9B" Offset="0.48"/>
+        <GradientStop Color="#885D8A9B" Offset="1"/>
+    </LinearGradientBrush>
+
+    <Style x:Key="ProgressBarStyle" TargetType="{x:Type ProgressBar}">
+        <Setter Property="Foreground" Value="{StaticResource ProgressBarForeground}"/>
+        <Setter Property="Background" Value="{StaticResource ProgressBarBackground}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ProgressBarBorder}"/>
+		<Setter Property="Orientation" Value="Horizontal"/>
+        <Setter Property="BorderThickness" Value="3,3,3,3"/>
+        <Setter Property="IsIndeterminate" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+            <ControlTemplate TargetType="{x:Type ProgressBar}">
+				<Grid>
+                    <Border Background="{TemplateBinding Background}"
+							BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="6,6,6,6">
+                        <Decorator Name="PART_Track">
+                            <Border Name="PART_Indicator"
+                                    CornerRadius="4"
+                                    VerticalAlignment="Stretch"
+									HorizontalAlignment="Left"
+                                    Background="{TemplateBinding Foreground}" />
+                        </Decorator>
+                    </Border>
+                </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+	
+</ResourceDictionary>

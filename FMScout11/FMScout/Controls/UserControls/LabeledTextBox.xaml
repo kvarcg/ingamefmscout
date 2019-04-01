@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="FMScout.UserControls.LabeledTextBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:customcontrols="clr-namespace:FMScout.CustomControls"
+    Height="Auto" Width="Auto">
+    <StackPanel x:Name="LayoutRoot" Orientation="Horizontal">
+        <Label x:Name="MyLabel" 
+			Content="{Binding LabelContent}" 
+			Width="{Binding LabelWidth}" 								
+			Height="{Binding LabelHeight}"
+            HorizontalContentAlignment="{Binding LabelAlignment}"
+            Style="{DynamicResource Label}"/>
+        <customcontrols:InfoTextBox 
+            x:Name="MyTextBox"
+            TextBoxInfo="{Binding TextBoxInfoText}"
+            Text="{Binding TextBoxText}"
+		    Width="{Binding TextBoxWidth}" 								
+		    Height="{Binding TextBoxHeight}"
+            HorizontalContentAlignment="{Binding TextBoxAlignment}"
+            VerticalContentAlignment="Center" 
+			Style="{DynamicResource InfoTextBox}"/>
+    </StackPanel>
+</UserControl>

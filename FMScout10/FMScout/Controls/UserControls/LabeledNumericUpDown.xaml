@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="FMScout.UserControls.LabeledNumericUpDown"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:customcontrols="clr-namespace:FMScout.CustomControls"
+    Height="Auto" Width="Auto">
+    <StackPanel x:Name="LayoutRoot" Orientation="Horizontal">
+        <Label x:Name="MyLabel" 
+			Content="{Binding LabelContent}" 
+			Width="{Binding LabelWidth}" 								
+			Height="{Binding LabelHeight}"
+            HorizontalContentAlignment="{Binding LabelAlignment}"
+            Style="{DynamicResource Label}"/>
+        <customcontrols:NumericUpDown x:Name="MyNumericUpDown" 
+			Value="{Binding NumericValue}" 
+			Minimum="{Binding Minimum}" 
+			Maximum="{Binding Maximum}"
+            Width="{Binding NumericUpDownWidth}" 
+            Height="{Binding NumericUpDownHeight}"
+            HorizontalContentAlignment="{Binding NumericUpDownAlignment}"
+			Style="{DynamicResource NumericUpDown}"/>
+    </StackPanel>
+</UserControl>

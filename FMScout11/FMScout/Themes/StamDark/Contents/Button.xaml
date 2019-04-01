@@ -1,0 +1,288 @@
+﻿<ResourceDictionary 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- @ Background -->
+    <LinearGradientBrush x:Key="ButtonGradientBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#FF363A3E" Offset="0"/>
+        <GradientStop Color="#FF363A3E" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ButtonBorderBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF35393D" Offset="0"/>
+        <GradientStop Color="#FF35393D" Offset="1"/>
+    </LinearGradientBrush>
+
+    <!-- @ MouseOver -->
+    <LinearGradientBrush x:Key="ButtonMouseOverGradientBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#FF484F56" Offset="0"/>
+        <GradientStop Color="#FF484F56" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ButtonMouseOverGradientBorder" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#FF9BB1C5" Offset="0"/>
+        <GradientStop Color="#FF9BB1C5" Offset="1"/>
+    </LinearGradientBrush>
+
+    <!-- @ Focus -->
+    <LinearGradientBrush x:Key="ButtonFocusGradientBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF363A3E" Offset="0"/>
+        <GradientStop Color="#FF363A3E" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ButtonFocusGradientBorder" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF19BC34" Offset="0"/>
+        <GradientStop Color="#FF19BC34" Offset="1"/>
+    </LinearGradientBrush>
+
+    <!-- @ Pressed -->
+    <LinearGradientBrush x:Key="ButtonPressedGradientBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#FF31373D" Offset="0"/>
+        <GradientStop Color="#FF31373D" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ButtonPressedGradientBorder" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#FFCBC318" Offset="0"/>
+        <GradientStop Color="#FFCBC318" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ButtonDisabledGradientBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#88606060" Offset="0"/>
+        <GradientStop Color="#88606060" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ButtonDisabledGradientBorder" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#88606060" Offset="0"/>
+        <GradientStop Color="#88606060" Offset="1"/>
+    </LinearGradientBrush>
+	
+	<Style x:Key="Button" TargetType="{x:Type Button}">
+		<Setter Property="IsEnabled" Value="true" />
+		<Setter Property="IsTabStop" Value="true" />
+		<Setter Property="FocusVisualStyle" Value="{DynamicResource Focus}"/>
+		<Setter Property="Background" Value="{StaticResource ButtonGradientBrush}"/>
+		<Setter Property="BorderBrush" Value="{StaticResource ButtonBorderBrush}"/>
+		<Setter Property="Foreground" Value="{DynamicResource ForegroundGradient}"/>
+		<Setter Property="HorizontalContentAlignment" Value="Center"/>
+		<Setter Property="VerticalContentAlignment" Value="Center"/>
+		<Setter Property="HorizontalAlignment" Value="Left"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="Width" Value="100"/>
+		<Setter Property="Height" Value="20"/>
+        <Setter Property="BorderThickness" Value="1,1,1,1"/>	
+        <Setter Property="Cursor" Value="Hand"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type Button}">
+					<Border x:Name="Bd"
+					Background="{TemplateBinding Background}"
+					BorderBrush="{TemplateBinding BorderBrush}"
+					BorderThickness="{TemplateBinding BorderThickness}"
+					CornerRadius="2,2,2,2">
+						<ContentPresenter 
+						HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+						Margin="{TemplateBinding Padding}" 
+						VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
+						SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+						RecognizesAccessKey="True"/>
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="true">
+							<Setter Property="Background" TargetName="Bd" Value="{StaticResource ButtonMouseOverGradientBrush}"/>
+							<Setter Property="BorderBrush" TargetName="Bd" Value="{StaticResource ButtonMouseOverGradientBorder}"/>
+						</Trigger>	
+						<Trigger Property="IsPressed" Value="true">
+							<Setter Property="Background" TargetName="Bd" Value="{StaticResource ButtonPressedGradientBrush}"/>
+							<Setter Property="BorderBrush" TargetName="Bd" Value="{StaticResource ButtonPressedGradientBorder}"/>
+						</Trigger>												
+						<Trigger Property="ToggleButton.IsChecked" Value="true">
+							<Setter Property="Background" TargetName="Bd" Value="{StaticResource ButtonPressedGradientBrush}"/>
+							<Setter Property="BorderBrush" TargetName="Bd" Value="{StaticResource ButtonPressedGradientBrush}"/>
+						</Trigger>
+						<Trigger Property="IsEnabled" Value="false">
+							<Setter Property="Background" TargetName="Bd" Value="{DynamicResource DisabledGradientBrush}"/>
+							<Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource DisabledGradientBorder}"/>
+							<Setter Property="Foreground" Value="{DynamicResource DisabledForeground}"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+    <Style x:Key="ButtonImage" TargetType="{x:Type Button}">
+        <Setter Property="IsEnabled" Value="true" />
+        <Setter Property="IsTabStop" Value="true" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource Focus}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundGradient}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Height" Value="20"/>
+        <Setter Property="BorderThickness" Value="0,0,0,0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="Bd"
+					Background="{TemplateBinding Background}"
+					BorderBrush="{TemplateBinding BorderBrush}"
+					BorderThickness="{TemplateBinding BorderThickness}"
+                    Opacity="0.5"
+					CornerRadius="2,2,2,2">
+                        <ContentPresenter 
+						HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+						Margin="{TemplateBinding Padding}" 
+						VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
+						SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+						RecognizesAccessKey="True"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Opacity" TargetName="Bd" Value="0.9"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter Property="Opacity" TargetName="Bd" Value="0.7"/>
+                        </Trigger>
+                        <Trigger Property="ToggleButton.IsChecked" Value="true">
+                            <Setter Property="Opacity" TargetName="Bd" Value="0.7"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Opacity" TargetName="Bd" Value="0.2"/>
+                            <Setter Property="Foreground" Value="{DynamicResource DisabledForeground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <LinearGradientBrush x:Key="ButtonSearchBackground" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF40454A" Offset="0"/>
+        <GradientStop Color="#FF363A3E" Offset="1"/>
+    </LinearGradientBrush>
+	
+	<LinearGradientBrush x:Key="ButtonSearchBorder" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF35393D" Offset="0"/>
+        <GradientStop Color="#FF35393D" Offset="1"/>
+    </LinearGradientBrush>
+	
+	<Style x:Key="ButtonSearch" TargetType="Button" BasedOn="{StaticResource Button}">
+		<Setter Property="Background" Value="{StaticResource ButtonSearchBackground}"/>
+		<Setter Property="BorderBrush" Value="{StaticResource ButtonSearchBorder}"/>
+	</Style>
+	
+	<SolidColorBrush x:Key="ButtonCustomizeForeground" Color="#FF7C838A"/>
+	<SolidColorBrush x:Key="ButtonCustomizeMouseOverForeground" Color="#FF899299"/>
+		
+	<Style x:Key="ButtonCustomize" TargetType="Button" BasedOn="{StaticResource Button}">
+		<Setter Property="Background" Value="Transparent"/>
+		<Setter Property="BorderBrush" Value="Transparent"/>
+		<Setter Property="Foreground" Value="{StaticResource ButtonCustomizeForeground}"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type Button}">
+					<Border x:Name="Bd"
+					Background="{TemplateBinding Background}"
+					BorderBrush="{TemplateBinding BorderBrush}"
+					BorderThickness="{TemplateBinding BorderThickness}"
+					CornerRadius="2,2,2,2">
+						<ContentPresenter 
+						HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+						Margin="{TemplateBinding Padding}" 
+						VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
+						SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+						RecognizesAccessKey="True"/>
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="true">
+							<Setter Property="Background" TargetName="Bd" Value="{StaticResource ButtonMouseOverGradientBrush}"/>
+						</Trigger>	
+						<Trigger Property="IsPressed" Value="true">
+							<Setter Property="Background" TargetName="Bd" Value="{StaticResource ButtonPressedGradientBrush}"/>
+							<Setter Property="Foreground" Value="#FFCCCCCC"/>
+						</Trigger>												
+						<Trigger Property="ToggleButton.IsChecked" Value="true">
+							<Setter Property="Background" TargetName="Bd" Value="{StaticResource ButtonPressedGradientBrush}"/>
+							<Setter Property="Foreground" Value="#FFCCCCCC"/>
+						</Trigger>
+						<Trigger Property="IsEnabled" Value="false">
+							<Setter Property="Background" TargetName="Bd" Value="{DynamicResource DisabledGradientBrush}"/>
+							<Setter Property="Foreground" Value="{DynamicResource DisabledForeground}"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>	
+	</Style>
+	
+	<LinearGradientBrush x:Key="ButtonPreferencesBackground" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF40454A" Offset="0"/>
+        <GradientStop Color="#FF363A3E" Offset="1"/>
+    </LinearGradientBrush>
+	
+	<LinearGradientBrush x:Key="ButtonPreferencesBorder" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF35393D" Offset="0"/>
+        <GradientStop Color="#FF35393D" Offset="1"/>
+    </LinearGradientBrush>
+	
+	<Style x:Key="ButtonPreferences" TargetType="Button" BasedOn="{StaticResource Button}">
+		<Setter Property="Background" Value="{StaticResource ButtonPreferencesBackground}"/>
+		<Setter Property="BorderBrush" Value="{StaticResource ButtonPreferencesBorder}"/>
+	</Style>
+
+	<LinearGradientBrush x:Key="ButtonCurrentScreenBackground" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF647D8D" Offset="0"/>
+        <GradientStop Color="#FF647D8D" Offset="1"/>
+    </LinearGradientBrush>
+	
+	<LinearGradientBrush x:Key="ButtonCurrentScreenBorder" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF566D88" Offset="0"/>
+        <GradientStop Color="#FF566D88" Offset="1"/>
+    </LinearGradientBrush>
+	
+	<Style x:Key="ButtonCurrentScreen" TargetType="Button" BasedOn="{StaticResource Button}">
+		<Setter Property="Background" Value="{StaticResource ButtonCurrentScreenBackground}"/>
+		<Setter Property="BorderBrush" Value="{StaticResource ButtonCurrentScreenBorder}"/>
+		<Setter Property="Opacity" Value="1"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type Button}">
+					<Border x:Name="Bd"
+					Background="{TemplateBinding Background}"
+					BorderBrush="{TemplateBinding BorderBrush}"
+					BorderThickness="{TemplateBinding BorderThickness}"
+					CornerRadius="2,2,2,2"
+					Opacity="0.8">
+						<ContentPresenter 
+						HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+						Margin="{TemplateBinding Padding}" 
+						VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
+						SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+						RecognizesAccessKey="True"/>
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="true">
+							<Setter Property="Opacity" TargetName="Bd" Value="0.9"/>
+							<Setter Property="Cursor" Value="Hand"/>
+						</Trigger>	
+						<Trigger Property="IsPressed" Value="true">
+							<Setter Property="Opacity" TargetName="Bd" Value="1.0"/>
+						</Trigger>												
+						<Trigger Property="ToggleButton.IsChecked" Value="true">
+							<Setter Property="Opacity" TargetName="Bd" Value="1.0"/>
+						</Trigger>
+						<Trigger Property="IsEnabled" Value="false">
+							<Setter Property="Opacity" TargetName="Bd" Value="0.2"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	
+</ResourceDictionary>

@@ -1,0 +1,11 @@
+﻿Mon 15/11/2010 14:51:43
+OS: Microsoft Windows NT 6.1.7600.0
+OS type: Win32NT
+FM Version: 11.1.1 DVD
+Message: Exception of type 'System.OutOfMemoryException' was thrown.
+Stacktrace:    at Young3.FMSearch.Core.Managers.ObjectManager.SplitMemoryAddressesIntoBuffer(List`1 memoryAddressesList) in C:\Work\Projects\CSharp\FMScout\FMScout11\FMSE.Core\Managers\ObjectManager.cs:line 560
+   at Young3.FMSearch.Core.Managers.ObjectManager.RetrieveObjectsCached[T](Expression`1 baseObjectPointer, Func`2 compiledObjectPointer, List`1 memoryAddresses) in C:\Work\Projects\CSharp\FMScout\FMScout11\FMSE.Core\Managers\ObjectManager.cs:line 505
+   at Young3.FMSearch.Core.Managers.ObjectManager.Load(Boolean refreshPersonCache) in C:\Work\Projects\CSharp\FMScout\FMScout11\FMSE.Core\Managers\ObjectManager.cs:line 107
+   at Young3.FMSearch.Interface.FMContext.LoadDataForCheckedGame(Boolean refreshPersonCache) in C:\Work\Projects\CSharp\FMScout\FMScout11\FMSE.Core\FM.cs:line 91
+   at FMScout.Context.loadFMData() in C:\Work\Projects\CSharp\FMScout\FMScout11\FMScout\Logic\ScoutContext.cs:line 125
+   at FMScout.View.WindowMain.startLoading(WindowLoading windowLoading) in C:\Work\Projects\CSharp\FMScout\FMScout11\FMScout\View\Windows\WindowMain.xaml.cs:line 678

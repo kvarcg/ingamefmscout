@@ -1,0 +1,726 @@
+﻿#currencies
+British Pound
+Euro
+US Dollars
+
+#wages
+Weekly
+Monthly
+Yearly
+
+#heights
+Centimeters
+Meters
+
+#weights
+Kilos
+Pounds
+
+#yesno
+Yes
+No
+
+#contractstatuses
+Expiring (6 months)
+Expiring (1 year)
+Free Transfer
+
+#regions
+African
+Asian
+European
+North American
+South American
+Oceanian
+
+#WindowGeneralLabels
+General Settings
+Currency
+Wage
+Distance/Height
+Weight
+Allow Editing
+Language
+Theme
+Wonderkids Max Age
+Wonderkids Min PA
+Wonderstaff Min PA
+Wonderteams Min Rep  
+cm
+m
+kg
+lbs
+
+#WindowPreferencesLabels
+Preferences
+Settings
+General
+Player Columns
+Staff Columns
+Team Columns
+Shortlist Columns
+Player Column Settings
+Staff Column Settings
+Team Column Settings
+Shortlist Column Settings
+Select All
+Clear
+Default
+Use Changes
+Cancel Changes
+Save custom settings if you wish to
+have them next time you use the scout or click here to remove them.
+Save current setting
+Delete current setting
+Set as default
+Use changes without saving
+Just close the window
+
+#WindowAboutLabels
+FM Assistant10
+OK
+Real-Time scouting utility for FM 2010 10.3.
+Special thanks goes to DrBernhard at the SIGames forums for his work on the FM2010 Ingame/Scout Framework.
+Thanks to Stam for his help with the icons.
+Many thanks to all my beta testers.
+Localization Credits
+Italian: Giovanni
+Turkish: Ufuk Gültin
+Contact Details
+FMAssistant10 Homepage
+Email me
+Bug Report
+
+#WindowLoadingLabels
+Looking FM 2010 10.3...Please wait
+Found FM 2010
+Loading Data
+Loading FM Data
+Generating Scout Data
+Loaded FM 2010
+in
+seconds
+Error Loading FM 2010 10.3
+Make sure you have a new or loaded game of FM 2010 10.3 up and running
+Closing in
+
+#WindowDonateLabels
+FM Assistant10 Donation
+Yes you rock!
+No but you still rock!
+This tool is and always will be provided to you as a free utility to make your game more enjoyable.
+However if you would like to encourage this project you can do it with a small donation or with a simple thanks :)
+May the FM force be with you Kostas.
+
+#WindowInfoLabels
+Current Settings
+Game Settings
+Game Status
+Loaded
+Game Version
+Players
+Staff
+Teams
+Scout Settings
+Settings
+Language
+Theme
+Currency
+Wage
+Height
+Weight
+Editor Settings
+Editing Settings
+
+#WindowCustomizeColumnsLabels
+Customize Columns
+
+#MenuLabels
+Load
+Exit
+Shortlist
+Import Shortlist
+Export Shortlist
+Export Selected Shortlist
+Add To Shortlist
+Search
+Players View
+Staff View
+Teams View
+Shortlist View
+Search Now
+Clear
+Clear Player Fields
+Clear Staff Fields
+Clear Team Fields
+Clear Shortlist
+Clear All
+Tools
+Preferences
+Help
+About
+Donate
+
+#WindowMainLabels
+Players
+Staff
+Teams
+Shortlist
+General
+Attributes
+Current Game Date
+Current Game Screen
+Show Info
+Hide Info
+
+#GeneralSearchLabels
+Search
+Results
+customize columns
+
+#PlayerSearchLabels
+Full Name
+name
+Nation
+nation
+Club
+club
+Region
+Age
+CA
+PA
+PR%
+Best PR
+Wage
+Value
+Sale Value
+Contract Status
+Ownership
+EU
+Regen
+Pref Foot
+Sides
+Positions
+GK
+SW
+D
+WB
+DM
+M
+AM
+ST
+L
+R
+C
+Free
+F
+
+#StaffSearchLabels
+Full Name
+name
+Nation
+nation
+Club
+club
+Role
+Region
+Age
+CA
+PA
+Contract Status
+Best CR
+Regen
+
+#TeamSearchLabels
+Name
+name
+Nation
+nation
+Stadium
+stadium
+Team Type
+Reputation
+Region
+Transfer Budget
+Wage Budget
+
+#PlayerProfileLabels
+View Technical
+View Goalkeeping
+Positional Rating:
+Best as:
+Team Squad
+Contract Started
+Contract Expiring
+Basic Wage
+Appearance Bonus
+Goal Bonus
+Clean Sheet Bonus
+Condition
+Fitness
+Morale
+Jadedness
+Happiness
+Squad No
+Left Foot
+Right Foot
+
+#StaffProfileLabels 
+Contract Started
+Contract Expiring
+Basic Wage
+
+#SearchingResults
+Search
+Searching
+Stop
+player entries found
+wonderkid entries found
+staff entries found
+wonderstaff entries found
+team entries found
+wonderteam entries found
+shortlist entries
+Query Took
+sec
+Calculated PR for
+Calculated CR for
+players
+staff
+teams
+Wonderkids
+WonderStaff
+WonderTeams
+Free Player
+Free Agent
+
+#ProfileGenericLabels
+None
+Unavailable
+Unknown
+No
+Yes
+Add To Shortlist
+Remove From Shortlist
+All Squads
+Team
+Uncapped
+years old
+Not HG
+Formed At:
+EU Member:
+No Sale Value
+Both Feet
+Left Foot
+Right Foot
+No Role
+No Contract
+No Wage
+No Bonus
+caps
+goals
+Not A Regen
+Is Regen
+Nation Players
+List Players
+List Staff
+Heal Team
+No Budget
+No Owner
+No Location
+No Nearby Stadium
+Empty
+Att
+Playmaker
+Free Role
+Club HG
+Country HG
+
+#TeamProfileLabels
+Year Founded
+National
+Status
+Max Affiliated Clubs
+Affiliated Clubs
+Training Facilities
+Youth Facilities
+Youth Academy
+Max Attendance
+Avg Attendance
+Min Attendance
+Reputation
+Total Transfer Budget
+Remaining Transfer Budget
+Balance
+Total Wage Budget
+Used Wage Budget
+Revenue Available
+Decay
+Field Width
+Field Length
+Current Capacity
+Seating Capacity
+Expansion Capacity
+Used Capacity
+
+#WindowProfileLabels
+Player Profiles
+Staff Profiles
+Team Profiles
+Players List
+Staff List
+Teams List
+
+#playerSearchAttributesGroupBoxes
+Technical Attributes
+Physical Attributes
+Mental Attributes
+Hidden Attributes
+Goalkeeping Attributes
+Mental Traits Attributes
+Personal Details
+Contract Details
+Other Attributes
+
+#prefFoots                                    
+Both
+Right
+Left
+
+#bestprs
+GK
+DC
+DL
+DR
+DMC
+DML
+DMR
+AMC
+AML
+AMR
+Fast FC
+Target FC
+
+#ownerShips
+Loan
+Co-Contract
+
+#staffSearchAttributesGroupBoxes
+Tactical Attributes
+Mental Attributes
+Coaching Attributes
+Non Tactical Attributes
+Chairman Attributes
+Personal Details
+Contract Details
+Best Ratings
+
+#staffDisplayRatings
+Fit 
+GK 
+Tac 
+BC 
+Def 
+Att 
+Shoot 
+Set 
+
+#staffRoles
+Chairman
+Director
+Manager
+Assistant Manager
+1st Team Coach
+Youth Coach
+Coach
+1st/Youth/Coach
+Fitness Coach
+Goalkeeping Coach
+Physio
+Scout
+
+#bestcrs
+Fitness
+Goalkeepers
+Tactics
+Ball Control
+Defending
+Attacking
+Shooting
+Set Pieces
+
+#teamGroupBoxes
+General
+Finance Details
+Stadium Details
+
+#teamtypes
+National
+Club
+
+#reputations
+World
+National
+Local
+Unknown
+
+#playerColumns
+S
+ID
+Full Name
+Nation
+Club
+Team Squad
+Position
+Age
+CA
+PA
+ADiff
+Best PR
+Best PR%
+Current Value
+Sale Value
+Contract Started
+Contract Expiring
+Current Wage
+World Reputation
+National Reputation
+Local Reputation
+Corners
+Crossing
+Dribbling
+Finishing
+First Touch
+Free Kicks
+Heading
+Long Shots
+Long Throws
+Marking
+Passing
+Penalty Taking
+Tackling
+Technique
+Acceleration
+Agility
+Balance
+Jumping
+Natural Fitness
+Pace
+Stamina
+Strength
+Left Foot
+Right Foot
+Aggression
+Anticipation
+Bravery
+Composure
+Concentration
+Creativity
+Decisions
+Determination
+Flair
+Influence
+Off The Ball
+Positioning
+Team Work
+WorkRate
+Consistency
+Dirtyness
+Important Matches
+Injury Proneness
+Versatility
+Aerial Ability
+Command Of Area
+Communication
+Eccentricity
+Handling
+Kicking
+One On Ones
+Reflexes
+Rushing Out
+Tendency To Punch
+Throwing
+Adaptability
+Ambition
+Controversy
+Loyalty
+Pressure
+Professionalism
+Sportsmanship
+Temperament
+
+#staffColumns
+ID
+Full Name
+Nation
+Club
+Role
+Age
+CA
+PA
+ADiff
+Best CR
+Best CR Stars
+Contract Started
+Contract Expiring
+Current Wage
+World Reputation
+National Reputation
+Local Reputation
+Depth
+Directness
+Flamboyancy
+Flexibility
+Free Roles
+Marking
+Offside
+Pressing
+Sitting Back
+Tempo
+Use Of Playmaker
+Use Of Substitutions
+Width
+Adaptability
+Ambition
+Controversy
+Determination
+Loyalty
+Pressure
+Professionalism
+Sportsmanship
+Judging Player Ability
+Judging Player Potential
+Level Of Discipline
+Motivating
+Physiotherapy
+Tactical Knowledge
+Attacking
+Defending
+Fitness
+Goalkeepers
+Mental
+Player
+Tactical
+Technical
+Man Management
+Working With Youngsters
+Buying Players
+Hardness Of Training
+Mind Games
+Squad Rotation
+Business
+Interference
+Patience
+Resources
+
+#teamColumns
+ID
+Name
+Nation
+Reputation
+Status
+Stadium
+Transfer Budget
+Remaining Budget
+Wage Budget
+Wage Used
+Budget Balance
+Transfer Revenue Available
+Current Affiliated Clubs
+Max Affiliated Clubs
+Training Facilities
+Youth Facilities
+Maximum Attendance
+Average Attendance
+Minimum Attendance
+Decay
+Field Width
+Field Length
+Current Capacity 
+Seating Capacity
+Expansion Capacity
+Used Capacity
+
+#shortlistColumns
+ID
+Full Name
+Nation
+Club
+Team Squad
+Position
+Age
+CA
+PA
+ADiff
+Best PR
+Best PR%
+Current Value
+Sale Value
+Contract Started
+Contract Expiring
+Current Wage
+World Reputation
+National Reputation
+Local Reputation
+Corners
+Crossing
+Dribbling
+Finishing
+First Touch
+Free Kicks
+Heading
+Long Shots
+Long Throws
+Marking
+Passing
+Penalty Taking
+Tackling
+Technique
+Acceleration
+Agility
+Balance
+Jumping
+Natural Fitness
+Pace
+Stamina
+Strength
+Left Foot
+Right Foot
+Aggression
+Anticipation
+Bravery
+Composure
+Concentration
+Creativity
+Decisions
+Determination
+Flair
+Influence
+Off The Ball
+Positioning
+Team Work
+WorkRate
+Consistency
+Dirtyness
+Important Matches
+Injury Proneness
+Versatility
+Aerial Ability
+Command Of Area
+Communication
+Eccentricity
+Handling
+Kicking
+One On Ones
+Reflexes
+Rushing Out
+Tendency To Punch
+Throwing
+Adaptability
+Ambition
+Controversy
+Loyalty
+Pressure
+Professionalism
+Sportsmanship
+Temperament

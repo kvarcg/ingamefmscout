@@ -1,0 +1,85 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:uc="clr-namespace:FMScout.UserControls"    
+	mc:Ignorable="d"
+	x:Class="FMScout.View.MainWindow.TeamSearchTabItem"
+	Width="Auto" Height="Auto"
+	d:DesignHeight="400">
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <GroupBox Style="{DynamicResource GroupBoxSearch}" x:Name="GroupBoxTeamsSearch" Header="{Binding Path=groupboxsearch.Header}" Grid.Row="0" Padding="0,0,0,0">
+            <WrapPanel>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+                    <GroupBox Style="{DynamicResource GroupBoxInnerSearch}" Padding="0,0,0,0" x:Name="GroupBoxTeamsSearch1" Grid.Row="0">
+                        <StackPanel Orientation="Vertical">
+                            <uc:LabeledTextBoxAutoComplete Margin="0,4,0,0" x:Name="name" DataContext="{Binding Path=name}"/>
+                            <uc:LabeledTextBoxAutoComplete x:Name="nation" DataContext="{Binding Path=nation}"/>
+                            <uc:LabeledTextBoxAutoComplete x:Name="stadium" DataContext="{Binding Path=stadium}"/>
+                        </StackPanel>
+                    </GroupBox>
+                    <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
+                        <Button Style="{DynamicResource ButtonSearch}" x:Name="ButtonSearch" 
+                                Margin="0,0,0,0" Width="Auto" Height="20" Padding="2,0,2,0"
+                                Content="{Binding Path=search}"
+                                ContentTemplate="{StaticResource ImageTextButtonTemplate}"/>
+                        <Button Style="{DynamicResource ButtonSearch}" x:Name="ButtonWonder" Margin="4,0,4,0" 
+                                Width="Auto" Height="20" Padding="2,0,2,0"
+                                Content="{Binding Path=wonder}"
+                                ContentTemplate="{StaticResource ImageTextButtonTemplate}"/>
+                    </StackPanel>
+                </Grid>
+                <GroupBox Style="{DynamicResource GroupBoxInnerSearch}" Padding="0,0,0,0" x:Name="GroupBoxTeamsSearch2" VerticalAlignment="Top">
+                    <StackPanel Orientation="Vertical" Margin="4,4,0,0">
+                        <uc:LabeledComboBox x:Name="teamtype" DataContext="{Binding Path=teamtype}"/>
+                        <uc:LabeledComboBox x:Name="reputation" DataContext="{Binding Path=reputation}"/>
+                        <uc:LabeledComboBox x:Name="region" DataContext="{Binding Path=region}"/>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Style="{DynamicResource GroupBoxInnerSearch}" Padding="0,0,0,0" x:Name="GroupBoxTeamsSearch3" VerticalAlignment="Top">
+                    <StackPanel Orientation="Vertical" Margin="4,0,0,0">
+                        <uc:LabeledNumericUpDownMinMax Margin="0,4,0,0" x:Name="transferBudget" DataContext="{Binding Path=transferBudget}"/>
+                        <uc:LabeledNumericUpDownMinMax x:Name="wageBudget" DataContext="{Binding Path=wageBudget}"/>
+                    </StackPanel>
+                </GroupBox>
+            </WrapPanel>
+        </GroupBox>
+        <GroupBox Style="{DynamicResource GroupBoxGrid}" x:Name="GroupBoxTeamsDataGridView" 
+                  Header="{Binding Path=groupboxresults.Header}" Grid.Row="1" Margin="0,0,0,0" Padding="0,0,0,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Style="{DynamicResource ButtonCustomize}" x:Name="ButtonColumns" Grid.Row="0" 
+			Width="Auto" Height="11" FontSize="8"
+			Margin="0,0,0,0" Padding="4,0,4,0" 
+			HorizontalAlignment="Right">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center" FontWeight="Bold"
+                                       Text="{Binding Path=customizecolumns.Header}"/>
+                            <Image Margin="4,0,0,0" Stretch="Uniform" VerticalAlignment="Center" 
+				Height="11" Width="16"
+	            Source="{StaticResource customizecolumns}"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+                <DataGrid Style="{DynamicResource DataGrid}" x:Name="dataGrid" 
+                              Grid.Row="1" ItemsSource="{Binding Path=.}"/>
+                <ProgressBar x:Name="progressBar" Width="300" Height="20"
+				             HorizontalAlignment="Center" VerticalAlignment="Center"
+			                 Grid.Row="1" Style="{DynamicResource ProgressBarStyle}"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

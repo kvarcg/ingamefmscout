@@ -1,0 +1,47 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:customcontrols="clr-namespace:FMScout.CustomControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+	x:Class="FMScout.UserControls.LabeledNumericUpDownMinMaxAttributes"                  
+    Height="{Binding LabelHeight}" Width="Auto" mc:Ignorable="d" Style="{DynamicResource LabeledNumericUpDownMinMaxAttributes}">
+    <Grid x:Name="LayoutRoot">
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="{Binding LabelWidth}"/>
+		<ColumnDefinition Width="{Binding NumericUpDownMinMaxWidth}"/>
+		<ColumnDefinition Width="Auto"/>
+		<ColumnDefinition Width="{Binding NumericUpDownMinMaxWidth}"/>
+	</Grid.ColumnDefinitions>
+ 	<Label x:Name="MyLabel" Grid.Column="0"
+			Content="{Binding LabelContent}" 	
+			Width="Auto"						
+			Height="{Binding LabelHeight}"
+            HorizontalContentAlignment="Left"
+            VerticalAlignment="Center"
+            Background="Transparent"
+			Style="{DynamicResource ProfileLabel}"/>
+        <customcontrols:NumericUpDown x:Name="MyNumericUpDownMin" Grid.Column="1"
+            MinimumChanged="MyNumericUpDownMin_MinimumChanged"                                     
+            ValueChanged="MyNumericUpDownMin_ValueChanged"
+			Value="{Binding ValueMin}" 
+			Minimum="{Binding Minimum}" 
+            Width="{Binding NumericUpDownMinMaxWidth}" 
+            Height="{Binding NumericUpDownMinMaxHeight}"
+			VerticalAlignment="Center"
+            HorizontalContentAlignment="{Binding NumericUpDownMinMaxAlignment}"
+			Style="{DynamicResource ProfileNumericUpDown}"/>
+        <Label Content="-" HorizontalContentAlignment="Center" Padding="2,0,2,0" Grid.Column="2"
+               Style="{DynamicResource ProfileLabel}"/>
+        <customcontrols:NumericUpDown x:Name="MyNumericUpDownMax" Grid.Column="3"    
+            ValueChanged="MyNumericUpDownMax_ValueChanged"
+            MaximumChanged="MyNumericUpDownMax_MaximumChanged"                                       
+			Value="{Binding ValueMax}" 
+			Maximum="{Binding Maximum}"                                      
+            Width="{Binding NumericUpDownMinMaxWidth}" 
+            Height="{Binding NumericUpDownMinMaxHeight}"
+			VerticalAlignment="Center"
+            HorizontalContentAlignment="{Binding NumericUpDownMinMaxAlignment}"
+			Style="{DynamicResource ProfileNumericUpDown}"/>
+    </Grid>
+</UserControl>

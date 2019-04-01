@@ -1,0 +1,170 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:uc="clr-namespace:FMScout.UserControls"     
+	mc:Ignorable="d"
+	x:Class="FMScout.View.TeamProfile"
+	x:Name="UserControl"
+	d:DesignWidth="780" d:DesignHeight="660">
+	<UserControl.Background>
+		<ImageBrush ImageSource="{DynamicResource Background1}" Stretch="UniformToFill"/>
+	</UserControl.Background>
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="4,4,4,0">
+			<Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="140"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Style="{DynamicResource ProfileHeaderTextBox}" x:Name="ID" Text="{Binding Path=ID}"
+			HorizontalContentAlignment="Center" Grid.Column="0"/>
+            <TextBox Style="{DynamicResource ProfileHeaderTextBox}" x:Name="name" Text="{Binding Path=name}"
+			HorizontalContentAlignment="Center" Grid.Column="1"/>
+            <TextBox Style="{DynamicResource ProfileHeaderTextBox}" x:Name="nation" Text="{Binding Path=nation}"
+			HorizontalContentAlignment="Center" Grid.Column="2"/>
+        </Grid>
+        <StackPanel x:Name="OptionsPanel" Grid.Row="1" Grid.Column="0">
+        </StackPanel>
+		<Grid Grid.Row="1" Grid.Column="1" Margin="0,4,0,4">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+        	<Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+                <GroupBox Style="{DynamicResource ProfileGroupBox}" 
+				Header="{Binding Path=generaldetails.Header}" 
+				x:Name="General" VerticalAlignment="Top" 
+				Grid.Row="0" Grid.Column="0">
+                    <Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>				
+						<uc:LabeledTextBoxProfile x:Name="yearfounded" DataContext="{Binding yearfounded}" 
+						HorizontalContentAlignment="Center" Grid.Row="0"/>
+						<uc:LabeledTextBoxProfile x:Name="national" DataContext="{Binding national}" 
+						HorizontalContentAlignment="Center" Grid.Row="1"/>
+						<uc:LabeledTextBoxProfile x:Name="status" DataContext="{Binding status}" 
+						HorizontalContentAlignment="Center" Grid.Row="2"/>
+						<uc:LabeledTextBoxProfile x:Name="maxafclubs" DataContext="{Binding maxafclubs}" 
+						HorizontalContentAlignment="Center" Grid.Row="3"/>
+						<uc:LabeledTextBoxProfile x:Name="afclubs" DataContext="{Binding afclubs}" 
+						HorizontalContentAlignment="Center" Grid.Row="4"/>
+						<uc:LabeledTextBoxProfile x:Name="trainingfacilities" DataContext="{Binding trainingfacilities}" 
+						HorizontalContentAlignment="Center" Grid.Row="5"/>
+						<uc:LabeledTextBoxProfile x:Name="youthfacilities" DataContext="{Binding youthfacilities}" 
+						HorizontalContentAlignment="Center" Grid.Row="6"/>
+						<uc:LabeledTextBoxProfile x:Name="youthacademy" DataContext="{Binding youthacademy}" 
+						HorizontalContentAlignment="Center" Grid.Row="7"/>
+						<uc:LabeledTextBoxProfile x:Name="maxattendance" DataContext="{Binding maxattendance}" 
+						HorizontalContentAlignment="Center" Grid.Row="8"/>
+						<uc:LabeledTextBoxProfile x:Name="averageattendance" DataContext="{Binding averageattendance}" 
+						HorizontalContentAlignment="Center" Grid.Row="9"/>
+						<uc:LabeledTextBoxProfile x:Name="minattendance" DataContext="{Binding minattendance}" 
+						HorizontalContentAlignment="Center" Grid.Row="10"/>
+						<uc:LabeledTextBoxProfile x:Name="reputation" DataContext="{Binding reputation}" 
+						HorizontalContentAlignment="Center" Grid.Row="11"/>																																				
+				</Grid>
+                </GroupBox>
+				<GroupBox Style="{DynamicResource ProfileGroupBox}"
+				x:Name="FinanceDetails" VerticalAlignment="Top" 
+				Header="{Binding Path=financedetails.Header}" Grid.Row="0" Grid.Column="1">
+                    <Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition/>
+							<RowDefinition/>
+							<RowDefinition/>
+							<RowDefinition/>
+							<RowDefinition/>
+							<RowDefinition/>
+						</Grid.RowDefinitions>
+						<uc:LabeledTextBoxProfile x:Name="totaltransfer" DataContext="{Binding Path=totaltransfer}" Grid.Row="0"/>
+						<uc:LabeledTextBoxProfile x:Name="remtransfer" DataContext="{Binding Path=remtransfer}" Grid.Row="1"/>
+						<uc:LabeledTextBoxProfile x:Name="balance" DataContext="{Binding Path=balance}" Grid.Row="2"/>
+						<uc:LabeledTextBoxProfile x:Name="totalwage" DataContext="{Binding Path=totalwage}" Grid.Row="3"/>
+						<uc:LabeledTextBoxProfile x:Name="usedwage" DataContext="{Binding Path=usedwage}" Grid.Row="4"/>
+						<uc:LabeledTextBoxProfile x:Name="revenueavailable" DataContext="{Binding Path=revenueavailable}" Grid.Row="5"/>
+					</Grid>
+				</GroupBox>
+				<GroupBox Style="{DynamicResource ProfileGroupBox}" 
+				x:Name="StadiumDetails" VerticalAlignment="Top" 
+				Header="{Binding Path=stadiumdetails.Header}" Grid.Row="0" Grid.Column="2">
+                    <StackPanel>
+						<TextBox Height="19" Style="{DynamicResource ProfileTextBox}" x:Name="stadiumname" Text="{Binding stadiumname}" 
+						HorizontalContentAlignment="Center"/>
+						<TextBox Height="19" Style="{DynamicResource ProfileTextBox}" x:Name="stadiumowner" Text="{Binding stadiumowner}" 
+						HorizontalContentAlignment="Center" Grid.Row="0"/>
+						<TextBox Height="19" Style="{DynamicResource ProfileTextBox}" x:Name="stadiumlocation" Text="{Binding stadiumlocation}" 
+						HorizontalContentAlignment="Center" Grid.Row="0"/>
+						<TextBox Height="19" Style="{DynamicResource ProfileTextBox}" x:Name="stadiumnearby" Text="{Binding stadiumnearby}" 
+						HorizontalContentAlignment="Center" Grid.Row="0"/>
+                        <uc:LabeledTextBoxProfile x:Name="decay" DataContext="{Binding Path=decay}"/>
+                        <uc:LabeledTextBoxProfile x:Name="fieldwidth" DataContext="{Binding Path=fieldwidth}"/>
+                        <uc:LabeledTextBoxProfile x:Name="fieldlength" DataContext="{Binding Path=fieldlength}"/>
+                        <uc:LabeledTextBoxProfile x:Name="curcapacity" DataContext="{Binding Path=curcapacity}"/>
+                        <uc:LabeledTextBoxProfile x:Name="seatcapacity" DataContext="{Binding Path=seatcapacity}"/>
+                        <uc:LabeledTextBoxProfile x:Name="expcapacity" DataContext="{Binding Path=expcapacity}"/>
+                        <uc:LabeledTextBoxProfile x:Name="usedcapacity" DataContext="{Binding Path=usedcapacity}"/>
+                    </StackPanel>
+                </GroupBox>
+			</Grid>
+			<Grid Grid.Row="1" HorizontalAlignment="Left">
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Button x:Name="ButtonListPlayers" Style="{DynamicResource ProfileButton}" 
+                        Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"
+                        Content="{Binding buttonlistplayerscontent}"
+                        IsEnabled="{Binding buttonlistplayersisenabled}"/>
+				<ComboBox x:Name="ComboBoxListPlayers" Style="{DynamicResource ProfileComboBox}" Margin="4,0,0,0" 
+                          Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center"
+                          ItemsSource="{Binding combolistplayersitems}"
+                          SelectedItem="{Binding combolistplayersselecteditem}"
+                          IsEnabled="{Binding combolistplayersisenabled}"/>
+				<Button x:Name="ButtonListStaff" Style="{DynamicResource ProfileButton}" 
+                        Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"
+                        Content="{Binding buttonliststaffcontent}"
+                        IsEnabled="{Binding buttonliststaffisenabled}"/>
+				<Button x:Name="ButtonHealTeam" Style="{DynamicResource ProfileButton}" 
+                        Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center"
+                        Content="{Binding buttonhealteamcontent}"
+                        IsEnabled="{Binding buttonhealteamisenabled}"/>
+			</Grid>
+        </Grid>
+	</Grid>
+</UserControl>

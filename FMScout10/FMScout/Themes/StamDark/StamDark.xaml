@@ -1,0 +1,24 @@
+﻿<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Contents/General.xaml"/>
+        <ResourceDictionary Source="Contents/Button.xaml"/>
+		<ResourceDictionary Source="Contents/CheckBox.xaml"/>		
+        <ResourceDictionary Source="Contents/ComboBox.xaml"/>
+        <ResourceDictionary Source="Contents/DataGrid.xaml"/>
+        <ResourceDictionary Source="Contents/GroupBox.xaml"/>
+        <ResourceDictionary Source="Contents/HyperLink.xaml"/>
+        <ResourceDictionary Source="Contents/Label.xaml"/>
+		<ResourceDictionary Source="Contents/NumericUpDown.xaml"/>
+		<ResourceDictionary Source="Contents/MenuItem.xaml"/>
+		<ResourceDictionary Source="Contents/RichTextBox.xaml"/>
+        <ResourceDictionary Source="Contents/TabItem.xaml"/>
+		<ResourceDictionary Source="Contents/TabControl.xaml"/>
+		<ResourceDictionary Source="Contents/TextBox.xaml"/>
+		<ResourceDictionary Source="Contents/Scrollbar.xaml"/>
+		<ResourceDictionary Source="Contents/Profiles.xaml"/>
+		<ResourceDictionary Source="Contents/ProgressBar.xaml"/>
+		<ResourceDictionary Source="Contents/ContextMenu.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

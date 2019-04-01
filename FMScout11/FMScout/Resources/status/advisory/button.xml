@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://www.sigames.com/dtds/properties.dtd">
+
+<properties version="1.0">
+	<!-- text colour -->
+	<colour red="255" green="255" blue="255"/>
+	
+	<!-- borders -->
+	<integer id="brdl" value="1"/>
+	<integer id="brdt" value="1"/>
+	<integer id="brdr" value="1"/>
+	<integer id="brdb" value="1"/>
+</properties>

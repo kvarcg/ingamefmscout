@@ -1,0 +1,50 @@
+﻿<Window 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="FMScout.View.WindowQuickColumns"
+    WindowStartupLocation="CenterOwner"
+	Width="Auto" MaxHeight="360" 
+    SizeToContent="WidthAndHeight"
+    ResizeMode="NoResize" Topmost="True" ShowInTaskbar="False" WindowStyle="None"
+    AllowsTransparency="True"
+	Style="{DynamicResource ChildWindowVisualStyle}">
+    <Border CornerRadius="2,2,2,2" 
+	Background="{StaticResource ChildWindowMainBackground}"
+	BorderBrush="{StaticResource ChildWindowMainBorder}" 
+	BorderThickness="1">
+        <Grid x:Name="WindowElement">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="22"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="WindowTop" Background="{DynamicResource ChildWindowMainBarBackground}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="22"/>
+                    <ColumnDefinition Width="22"/>
+                    <ColumnDefinition Width="22"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Margin="20,0,2,0" x:Name="Header" 
+                           HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0"
+                           Text="{Binding Path=header.Header}"/>
+                <Button Style="{DynamicResource ButtonImage}" x:Name="ButtonOK" 
+				Margin="0,2,2,2" Width="18" Height="18" HorizontalAlignment="Right" Grid.Column="1"
+                Content="{Binding Path=ok}"
+                ContentTemplate="{StaticResource ImageButtonTemplate}"/>
+                <Button Style="{DynamicResource ButtonImage}" x:Name="ButtonDefault"
+				Margin="0,2,2,2" Width="18" Height="18" HorizontalAlignment="Right" Grid.Column="2"
+                Content="{Binding Path=def}"
+                ContentTemplate="{StaticResource ImageButtonTemplate}"/>
+                <Button Style="{DynamicResource ButtonImage}" x:Name="ButtonClose"
+				Margin="0,2,2,2" Width="18" Height="18" HorizontalAlignment="Right" Grid.Column="3"
+                Content="{Binding Path=close}"
+                ContentTemplate="{StaticResource ImageButtonTemplate}"/>
+            </Grid>
+            <Grid x:Name="WindowContent" Margin="4,4,4,4" Grid.Row="1">
+                <Border BorderThickness="1" BorderBrush="Black" CornerRadius="2,2,2,2">
+                    <WrapPanel x:Name="WrapPanelColumns" Orientation="Vertical" Margin="4,4,4,4"/>
+                </Border>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

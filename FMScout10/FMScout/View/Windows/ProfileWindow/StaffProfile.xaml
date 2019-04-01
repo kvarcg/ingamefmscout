@@ -1,0 +1,199 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:uc="clr-namespace:FMScout.UserControls"     
+	mc:Ignorable="d"
+	x:Class="FMScout.View.StaffProfile"
+	x:Name="UserControl"
+	d:DesignWidth="780" d:DesignHeight="660">
+	<UserControl.Background>
+		<ImageBrush ImageSource="{DynamicResource Background1}" Stretch="UniformToFill"/>
+	</UserControl.Background>
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="4,4,4,0">
+			<Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="140"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Style="{DynamicResource ProfileHeaderTextBox}" x:Name="ID" Text="{Binding Path=ID}"
+			HorizontalContentAlignment="Center" Grid.Column="0"/>
+            <TextBox Style="{DynamicResource ProfileHeaderTextBox}" x:Name="name" Text="{Binding Path=fullname}"
+			HorizontalContentAlignment="Center" Grid.Column="1"/>
+            <TextBox Style="{DynamicResource ProfileHeaderTextBox}" x:Name="role" Text="{Binding Path=role}"
+			HorizontalContentAlignment="Center" Grid.Column="2"/>
+        </Grid>
+        <StackPanel x:Name="OptionsPanel" Grid.Row="1" Grid.Column="0">
+        </StackPanel>
+        <Grid Grid.Row="1" Grid.Column="1" Margin="0,4,0,4">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<StackPanel Grid.Row="0" Grid.Column="0">
+                <GroupBox Style="{DynamicResource ProfileGroupBox}" 
+				Header="{Binding Path=personaldetails.Header}" 
+				x:Name="Personal" VerticalAlignment="Top">
+                    <Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>					
+						<TextBox Height="38" Style="{DynamicResource ProfileTextBox}" x:Name="fullname" Text="{Binding fullname}" 
+						HorizontalContentAlignment="Center" Grid.Row="0" Grid.ColumnSpan="2"/>
+						<TextBox Height="38" Style="{DynamicResource ProfileTextBox}" x:Name="nation" Text="{Binding Path=nation}"
+						HorizontalContentAlignment="Center" Grid.Row="1" Grid.ColumnSpan="2"/>
+						<TextBox Height="20" Style="{DynamicResource ProfileTextBox}" x:Name="birthdate" Text="{Binding Path=birthdate}"
+						Grid.Row="2" Grid.Column="0"/>
+                        <TextBox Height="20" Style="{DynamicResource ProfileTextBox}" x:Name="age" Text="{Binding Path=age}"
+						Grid.Row="2" Grid.Column="1"/>
+                        <TextBox Height="20" Style="{DynamicResource ProfileTextBox}" x:Name="international" Text="{Binding Path=international}"
+						HorizontalContentAlignment="Center" Grid.Row="3" Grid.ColumnSpan="2"/>
+                        <TextBox Height="20" Style="{DynamicResource ProfileTextBox}" x:Name="ca" Text="{Binding Path=ca}"
+						Grid.Row="4" Grid.Column="0"/>
+                        <TextBox Height="20" Style="{DynamicResource ProfileTextBox}" x:Name="pa" Text="{Binding Path=pa}"
+						Grid.Row="4" Grid.Column="1"/>
+						<TextBox Height="20" Style="{DynamicResource ProfileTextBox}" x:Name="regen" Text="{Binding Path=regen}"
+						Grid.Row="5" Grid.ColumnSpan="2"/>
+				</Grid>
+                </GroupBox>
+				<GroupBox Style="{DynamicResource ProfileGroupBox}"
+				x:Name="Contract" VerticalAlignment="Top" 
+				Header="{Binding Path=contractdetails.Header}">
+                    <Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition/>
+							<RowDefinition/>
+							<RowDefinition/>
+							<RowDefinition/>
+						</Grid.RowDefinitions>
+						<TextBox Height="38" Style="{DynamicResource ProfileTextBox}" x:Name="club" Text="{Binding Path=club}" Grid.Row="0"
+						HorizontalContentAlignment="Center" />					
+						<uc:LabeledTextBoxProfile x:Name="contractstarted" DataContext="{Binding Path=contractstarted}" Grid.Row="1"/>
+						<uc:LabeledTextBoxProfile x:Name="contractexpiring" DataContext="{Binding Path=contractexpiring}" Grid.Row="2"/>
+						<uc:LabeledTextBoxProfile x:Name="wage" DataContext="{Binding Path=wage}" Grid.Row="3"/>
+					</Grid>
+				</GroupBox>
+				</StackPanel>
+				 <GroupBox Style="{DynamicResource ProfileGroupBox}" x:Name="Ratings" HorizontalAlignment="Center"
+					VerticalAlignment="Top" Header="{Binding Path=ratings.Header}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                   <StackPanel Orientation="Horizontal">
+				    <StackPanel>
+						<uc:LabeledImage x:Name="RFitness" DataContext="{Binding Path=rfitness}"/>
+						<uc:LabeledImage x:Name="RGoalkeepers" DataContext="{Binding Path=rgoalkeepers}"/>
+						<uc:LabeledImage x:Name="RTactics" DataContext="{Binding Path=rtactics}"/>
+						<uc:LabeledImage x:Name="RBalLControl" DataContext="{Binding Path=rballcontrol}"/>
+					</StackPanel>
+					<StackPanel Margin="4,0,0,0">
+						<uc:LabeledImage x:Name="RDefending" DataContext="{Binding Path=rdefending}"/>
+						<uc:LabeledImage x:Name="RAttacking" DataContext="{Binding Path=rattacking}"/>
+						<uc:LabeledImage x:Name="RShooting" DataContext="{Binding Path=rshooting}"/>
+						<uc:LabeledImage x:Name="RSetPieces" DataContext="{Binding Path=rsetpieces}"/>
+					</StackPanel>
+					</StackPanel>
+				</GroupBox>				
+				<StackPanel Grid.Row="0" Grid.Column="1">
+					<GroupBox Style="{DynamicResource ProfileGroupBox}" 
+					x:Name="CoachingAttributes" VerticalAlignment="Top" 
+					Header="{Binding Path=coachingattributes.Header}">
+	                    <StackPanel>
+	                        <uc:LabeledTextBoxProfile x:Name="attacking" DataContext="{Binding Path=attacking}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="defending" DataContext="{Binding Path=defending}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="fitness" DataContext="{Binding Path=fitness}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="goalkeepers" DataContext="{Binding Path=goalkeepers}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="mental" DataContext="{Binding Path=mental}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="player" DataContext="{Binding Path=player}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="tactical" DataContext="{Binding Path=tactical}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="technical" DataContext="{Binding Path=technical}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="manmanagement" DataContext="{Binding Path=manmanagement}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="workingwithyoungsters" DataContext="{Binding Path=workingwithyoungsters}"/>
+	                    </StackPanel>
+	                </GroupBox>
+					</StackPanel>
+					<GroupBox Style="{DynamicResource ProfileGroupBox}" x:Name="ChairmanAttributes" VerticalAlignment="Top" 
+					Grid.Row="1" Grid.Column="2"
+					Header="{Binding Path=chairmanattributes.Header}">
+		                <StackPanel>
+		                    <uc:LabeledTextBoxProfile x:Name="business" DataContext="{Binding Path=business}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="intereference" DataContext="{Binding Path=intereference}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="patience" DataContext="{Binding Path=patience}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="resources" DataContext="{Binding Path=resources}"/>
+		                </StackPanel>
+		            </GroupBox>				
+				<GroupBox Style="{DynamicResource ProfileGroupBox}" x:Name="MentalAttributes" 
+				VerticalAlignment="Top" Header="{Binding Path=mentalattributes.Header}"
+				Grid.Row="0" Grid.Column="2">
+                    <StackPanel>
+                        <uc:LabeledTextBoxProfile x:Name="adaptability" DataContext="{Binding Path=adaptability}"/>
+	                    <uc:LabeledTextBoxProfile x:Name="ambition" DataContext="{Binding Path=ambition}"/>
+	                    <uc:LabeledTextBoxProfile x:Name="controversy" DataContext="{Binding Path=controversy}"/>
+	                    <uc:LabeledTextBoxProfile x:Name="determination" DataContext="{Binding Path=determination}"/>
+	                    <uc:LabeledTextBoxProfile x:Name="loyalty" DataContext="{Binding Path=loyalty}"/>
+	                    <uc:LabeledTextBoxProfile x:Name="pressure" DataContext="{Binding Path=pressure}"/>
+	                    <uc:LabeledTextBoxProfile x:Name="professionalism" DataContext="{Binding Path=professionalism}"/>
+	                    <uc:LabeledTextBoxProfile x:Name="sportsmanship" DataContext="{Binding Path=sportsmanship}"/>
+	                    <!--<uc:LabeledTextBoxProfile x:Name="temperament" DataContext="{Binding Path=temperament}"/>-->
+	                    <uc:LabeledTextBoxProfile x:Name="judgingplayerability" DataContext="{Binding Path=judgingplayerability}"/>
+	                    <uc:LabeledTextBoxProfile x:Name="judgingplayerpotential" DataContext="{Binding Path=judgingplayerpotential}"/>
+	                    <uc:LabeledTextBoxProfile x:Name="levelofdiscipline" DataContext="{Binding Path=levelofdiscipline}"/>
+	                    <uc:LabeledTextBoxProfile x:Name="motivating" DataContext="{Binding Path=motivating}"/>
+	                    <uc:LabeledTextBoxProfile x:Name="physiotherapy" DataContext="{Binding Path=physiotherapy}"/>
+	                    <uc:LabeledTextBoxProfile x:Name="tacticalknowledge" DataContext="{Binding Path=tacticalknowledge}"/>
+                    </StackPanel>
+                </GroupBox>				
+				<StackPanel Grid.Row="0" Grid.Column="3">
+				 <GroupBox Style="{DynamicResource ProfileGroupBox}" x:Name="TacticalAttributes" 
+					VerticalAlignment="Top" Header="{Binding Path=tacticalattributes.Header}">
+	                    <StackPanel VerticalAlignment="Center">
+							<uc:LabeledTextBoxProfile x:Name="depth" DataContext="{Binding Path=depth}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="directness" DataContext="{Binding Path=directness}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="flamboyancy" DataContext="{Binding Path=flamboyancy}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="flexibility" DataContext="{Binding Path=flexibility}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="freeroles" DataContext="{Binding Path=freeroles}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="marking" DataContext="{Binding Path=marking}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="offside" DataContext="{Binding Path=offside}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="pressing" DataContext="{Binding Path=pressing}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="sittingback" DataContext="{Binding Path=sittingback}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="tempo" DataContext="{Binding Path=tempo}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="useofplaymaker" DataContext="{Binding Path=useofplaymaker}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="useofsubstitutions" DataContext="{Binding Path=useofsubstitutions}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="width" DataContext="{Binding Path=width}"/>
+	                    </StackPanel>
+	                </GroupBox>
+					</StackPanel>
+	                <GroupBox Style="{DynamicResource ProfileGroupBox}" x:Name="NonTacticalAttributes" 
+					Grid.Row="1" Grid.Column="3"
+					VerticalAlignment="Top" Header="{Binding Path=nontacticalattributes.Header}">
+	                    <StackPanel>
+		                    <uc:LabeledTextBoxProfile x:Name="buyingplayers" DataContext="{Binding Path=buyingplayers}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="hardnessoftraining" DataContext="{Binding Path=hardnessoftraining}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="mindgames" DataContext="{Binding Path=mindgames}"/>
+		                    <uc:LabeledTextBoxProfile x:Name="squadrotation" DataContext="{Binding Path=squadrotation}"/>
+	                    </StackPanel>
+	                </GroupBox>
+        </Grid>
+	</Grid>
+</UserControl>

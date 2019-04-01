@@ -1,0 +1,96 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mainwindow="clr-namespace:FMScout.View.MainWindow">
+
+    <BooleanToVisibilityConverter x:Key="VisibilityOfBool" />
+    
+    <DataTemplate x:Key="playerStatusDisplay">
+        <StackPanel Orientation="Horizontal" Margin="0,2,2,2" ToolTipService.ToolTip="{Binding Path=statusTooltip}">
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource free}"
+                   Visibility="{Binding Path=isFree, Converter={StaticResource VisibilityOfBool}}"/>
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource loan}"
+                   Visibility="{Binding Path=isLoan, Converter={StaticResource VisibilityOfBool}}"/>
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource coown}"
+                   Visibility="{Binding Path=IsCoown, Converter={StaticResource VisibilityOfBool}}"/>
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource regen}"
+                   Visibility="{Binding Path=IsRegen, Converter={StaticResource VisibilityOfBool}}"/>
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource youth}"
+                   Visibility="{Binding Path=IsYouth, Converter={StaticResource VisibilityOfBool}}"/>
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource exp6mo}"
+                   Visibility="{Binding Path=IsExpiring6mo, Converter={StaticResource VisibilityOfBool}}"/>
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource exp1yr}"
+                   Visibility="{Binding Path=IsExpiring1y, Converter={StaticResource VisibilityOfBool}}"/>
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource best}"
+                   Visibility="{Binding Path=IsBest, Converter={StaticResource VisibilityOfBool}}"/>
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource eu}"
+                   Visibility="{Binding Path=IsEU, Converter={StaticResource VisibilityOfBool}}"/>
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource wonder}"
+                   Visibility="{Binding Path=IsWonder, Converter={StaticResource VisibilityOfBool}}"/>
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource wanted}"
+                   Visibility="{Binding Path=isWanted, Converter={StaticResource VisibilityOfBool}}"/>
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource multiple}"
+                   Visibility="{Binding Path=IsMultiple, Converter={StaticResource VisibilityOfBool}}"/>
+        </StackPanel>
+    </DataTemplate>
+
+    <DataTemplate x:Key="staffStatusDisplay">
+        <StackPanel Orientation="Horizontal" Margin="0,2,2,2" ToolTipService.ToolTip="{Binding Path=statusTooltip}">
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource free}"
+                   Visibility="{Binding Path=isFree, Converter={StaticResource VisibilityOfBool}}"/>
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource exp6mo}"
+                   Visibility="{Binding Path=IsExpiring6mo, Converter={StaticResource VisibilityOfBool}}"/>
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource exp1yr}"
+                   Visibility="{Binding Path=IsExpiring1y, Converter={StaticResource VisibilityOfBool}}"/>
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource best}"
+                   Visibility="{Binding Path=IsBest, Converter={StaticResource VisibilityOfBool}}"/>
+            <Image Stretch="Uniform" Margin="2,0,0,0" VerticalAlignment="Center" Source="{StaticResource wonder}"
+                   Visibility="{Binding Path=IsWonder, Converter={StaticResource VisibilityOfBool}}"/>
+        </StackPanel>
+    </DataTemplate>
+
+    <DataTemplate x:Key="staffGridRating">
+        <Image Stretch="Uniform" Margin="0,0,0,0"
+				VerticalAlignment="Center"                                   
+	            Source="{Binding Path=BestCRStarsImage}" Grid.Column="0"/>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ShortlistGrid">
+        <Image Stretch="Uniform" Margin="0,0,0,0" DataContext="{Binding imageButton}"
+				VerticalAlignment="Center"                                   
+	            Source="{Binding Path=ImageSource}" Grid.Column="0"/>
+    </DataTemplate>
+    
+    <DataTemplate x:Key="ImageButtonTemplate">
+            <Image Stretch="{Binding ImageStretch}" Margin="{Binding ImageMargin}"
+				Width="{Binding ImageWidth}" Height="{Binding ImageHeight}"
+				VerticalAlignment="Center"                                   
+	            Source="{Binding ImageSource}" Grid.Column="0"/>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ImageTextButtonTemplate">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Stretch="{Binding ImageStretch}" Margin="{Binding ImageMargin}"
+				Width="{Binding ImageWidth}" Height="{Binding ImageHeight}"
+				VerticalAlignment="Center"                                   
+	            Source="{Binding ImageSource}" Grid.Column="0"/>
+            <TextBlock Margin="4,0,0,0" VerticalAlignment="Center" FontWeight="Bold"
+                       Text="{Binding TextBlockText}"
+					   Width="{Binding TextBlockWidth}" Height="{Binding TextBlockHeight}" Grid.Column="1"/>
+        </Grid>
+    </DataTemplate>
+    
+    <Style x:Key="ButtonFocusStyle" TargetType="{x:Type Border}">
+        <Setter Property="Background" Value="Gray" />
+        <Setter Property="BorderBrush" Value="Red" />
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="CornerRadius" Value="2,2,2,2" />
+        <Setter Property="IsHitTestVisible" Value="false" />
+        <Setter Property="Opacity" Value="0" />
+    </Style>
+       
+</ResourceDictionary>

@@ -1,0 +1,98 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:uc="clr-namespace:FMScout.UserControls"	
+	mc:Ignorable="d"
+	x:Class="FMScout.View.MainWindow.StaffSearchAttributes"
+	x:Name="UserControl"
+	d:DesignWidth="850" d:DesignHeight="600">
+	<UserControl.Background>
+		<ImageBrush ImageSource="{DynamicResource Background3}" Stretch="UniformToFill"/>
+	</UserControl.Background>		
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Margin="2,0,0,0">
+            <GroupBox Style="{DynamicResource AttributeGroupBox}" x:Name="TacticalAttributes" VerticalAlignment="Top" 
+                      Margin="0,4,0,0" Header="{Binding Path=tacticalattributes.Header}">
+                <StackPanel>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="depth" DataContext="{Binding Path=depth}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="directness" DataContext="{Binding Path=directness}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="flamboyancy" DataContext="{Binding Path=flamboyancy}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="flexibility" DataContext="{Binding Path=flexibility}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="freeroles" DataContext="{Binding Path=freeroles}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="marking" DataContext="{Binding Path=marking}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="offside" DataContext="{Binding Path=offside}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="pressing" DataContext="{Binding Path=pressing}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="sittingback" DataContext="{Binding Path=sittingback}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="tempo" DataContext="{Binding Path=tempo}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="useofplaymaker" DataContext="{Binding Path=useofplaymaker}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="useofsubstitutions" DataContext="{Binding Path=useofsubstitutions}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="width" DataContext="{Binding Path=width}"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Style="{DynamicResource AttributeGroupBox}" x:Name="NonTacticalAttributes" VerticalAlignment="Top" 
+                      Margin="0,4,0,0" Header="{Binding Path=nontacticalattributes.Header}">
+                <StackPanel>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="buyingplayers" DataContext="{Binding Path=buyingplayers}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="hardnessoftraining" DataContext="{Binding Path=hardnessoftraining}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="mindgames" DataContext="{Binding Path=mindgames}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="squadrotation" DataContext="{Binding Path=squadrotation}"/>
+                </StackPanel>
+            </GroupBox>			
+		</StackPanel>
+		<StackPanel Grid.Column="1">
+            <GroupBox Style="{DynamicResource AttributeGroupBox}" x:Name="MentalAttributes" VerticalAlignment="Top" 
+                      Margin="0,4,0,0" Header="{Binding Path=mentalattributes.Header}">
+                <StackPanel VerticalAlignment="Center">
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="adaptability" DataContext="{Binding Path=adaptability}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="ambition" DataContext="{Binding Path=ambition}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="controversy" DataContext="{Binding Path=controversy}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="determination" DataContext="{Binding Path=determination}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="loyalty" DataContext="{Binding Path=loyalty}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="pressure" DataContext="{Binding Path=pressure}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="professionalism" DataContext="{Binding Path=professionalism}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="sportsmanship" DataContext="{Binding Path=sportsmanship}"/>
+                   <!-- <uc:LabeledNumericUpDownMinMaxAttributes x:Name="temperament" DataContext="{Binding Path=temperament}"/>-->
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="judgingplayerability" DataContext="{Binding Path=judgingplayerability}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="judgingplayerpotential" DataContext="{Binding Path=judgingplayerpotential}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="levelofdiscipline" DataContext="{Binding Path=levelofdiscipline}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="motivating" DataContext="{Binding Path=motivating}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="physiotherapy" DataContext="{Binding Path=physiotherapy}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="tacticalknowledge" DataContext="{Binding Path=tacticalknowledge}"/>
+                </StackPanel>
+            </GroupBox>
+		</StackPanel>
+		 <StackPanel Grid.Column="2">	
+            <GroupBox Style="{DynamicResource AttributeGroupBox}" x:Name="CoachingAttributes" VerticalAlignment="Top" 
+                      Margin="0,4,0,0" Header="{Binding Path=coachingattributes.Header}">
+                <StackPanel>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="attacking" DataContext="{Binding Path=attacking}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="defending" DataContext="{Binding Path=defending}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="fitness" DataContext="{Binding Path=fitness}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="goalkeepers" DataContext="{Binding Path=goalkeepers}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="mental" DataContext="{Binding Path=mental}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="player" DataContext="{Binding Path=player}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="tactical" DataContext="{Binding Path=tactical}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="technical" DataContext="{Binding Path=technical}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="manmanagement" DataContext="{Binding Path=manmanagement}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="workingwithyoungsters" DataContext="{Binding Path=workingwithyoungsters}"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Style="{DynamicResource AttributeGroupBox}" x:Name="ChairmanAttributes" VerticalAlignment="Top" 
+                      Margin="0,4,0,0" Header="{Binding Path=chairmanattributes.Header}">
+                <StackPanel>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="business" DataContext="{Binding Path=business}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="intereference" DataContext="{Binding Path=intereference}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="patience" DataContext="{Binding Path=patience}"/>
+                    <uc:LabeledNumericUpDownMinMaxAttributes x:Name="resources" DataContext="{Binding Path=resources}"/>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+    </Grid>
+</UserControl>
