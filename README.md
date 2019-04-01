@@ -5,12 +5,12 @@ Ingame FMScout/FMAssistant (links [here](https://www.fmscout.com/a-ingame_fmscou
 This is, obviously, a dead project now. Nevertheless, I am releasing its code here for public use. Note that even though I have tested it and compiles/runs properly on VS 2017, I am making available **ONLY** the GUI interface and not the runtime engine, as it included memory offsets and other similar data.
 
 Screenshots:
-![](https://github.com/kvarcg/ingamefmscout/images/app.jpg)
-![](https://github.com/kvarcg/ingamefmscout/images/app2.jpg)
-![](https://github.com/kvarcg/ingamefmscout/images/playeratt.jpg)
-![](https://github.com/kvarcg/ingamefmscout/images/playerprof.jpg)
-![](https://github.com/kvarcg/ingamefmscout/images/playerprof2.jpg)
-![](https://github.com/kvarcg/ingamefmscout/images/staffprof.jpg)
-![](https://github.com/kvarcg/ingamefmscout/images/staffprof2.jpg)
-![](https://github.com/kvarcg/ingamefmscout/images/teamprof.jpg)
-![](https://github.com/kvarcg/ingamefmscout/images/preferences.jpg)
+![](https://github.com/kvarcg/ingamefmscout/blob/master/images/app.jpg)
+![](https://github.com/kvarcg/ingamefmscout/blob/master/images/app2.jpg)
+![](https://github.com/kvarcg/ingamefmscout/blob/master/images/playeratt.jpg)
+![](https://github.com/kvarcg/ingamefmscout/blob/master/images/playerprof.jpg)
+![](https://github.com/kvarcg/ingamefmscout/blob/master/images/playerprof2.jpg)
+![](https://github.com/kvarcg/ingamefmscout/blob/master/images/staffprof.jpg)
+![](https://github.com/kvarcg/ingamefmscout/blob/master/images/staffprof2.jpg)
+![](https://github.com/kvarcg/ingamefmscout/blob/master/images/teamprof.jpg)
+![](https://github.com/kvarcg/ingamefmscout/blob/master/images/preferences.jpg)
