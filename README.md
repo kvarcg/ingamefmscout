@@ -1,0 +1,2 @@
+# ingamefmscout
+Ingame FMScout/FMAssistant
